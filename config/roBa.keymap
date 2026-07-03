@@ -92,10 +92,10 @@
 
         ARROW {
             bindings = <
-&trans        &trans         &trans                     &trans        &trans                        &kp LC(LEFT_ARROW)  &trans    &trans  &kp RC(RIGHT)  &trans
-&kp LG(LBKT)  &kp LS(LG(A))  &kp RG(RS(RIGHT_BRACKET))  &kp RG(RBKT)  &trans  &trans      &kp HOME  &kp LEFT            &kp DOWN  &kp UP  &kp RIGHT      &kp END
-&trans        &trans         &trans                     &trans        &trans  &trans      &trans    &trans              &trans    &trans  &trans         &trans
-&trans        &trans         &trans                     &trans        &trans  &trans      &trans    &trans                                               &trans
+&trans        &trans                    &trans                     &trans        &trans                        &kp LC(LEFT_ARROW)  &trans    &trans  &kp RC(RIGHT)  &trans
+&kp LG(LBKT)  &kp LG(LS(LEFT_BRACKET))  &kp RG(RS(RIGHT_BRACKET))  &kp RG(RBKT)  &trans  &trans      &kp HOME  &kp LEFT            &kp DOWN  &kp UP  &kp RIGHT      &kp END
+&trans        &trans                    &trans                     &trans        &trans  &trans      &trans    &trans              &trans    &trans  &trans         &trans
+&trans        &trans                    &trans                     &trans        &trans  &trans      &trans    &trans                                               &trans
             >;
         };
 
