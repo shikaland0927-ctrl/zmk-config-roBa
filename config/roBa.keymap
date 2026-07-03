@@ -17,12 +17,12 @@
         compatible = "zmk,combos";
 
         eisuu {
-            bindings = <&kp LANGUAGE_2>;
+            bindings = <&kp LANGUAGE_1>;
             key-positions = <13 12>;
         };
 
         kana {
-            bindings = <&kp LANGUAGE_1>;
+            bindings = <&kp LANGUAGE_2>;
             key-positions = <18 19>;
         };
     };
@@ -74,7 +74,7 @@
                 #binding-cells = <2>;
                 hold-trigger-key-positions = <5 6 7 8 9 17 18 19 20 29 30>;
                 flavor = "tap-preferred";
-                tapping-term-ms = <200>;
+                tapping-term-ms = <100>;
                 hold-while-undecided;
                 hold-trigger-on-release;
             };
@@ -86,7 +86,7 @@
 
                 #binding-cells = <2>;
                 flavor = "tap-preferred";
-                tapping-term-ms = <200>;
+                tapping-term-ms = <100>;
                 hold-while-undecided;
                 hold-trigger-on-release;
                 hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 23 24 25 26 22>;
