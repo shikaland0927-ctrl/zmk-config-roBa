@@ -17,12 +17,12 @@
         compatible = "zmk,combos";
 
         eisuu {
-            bindings = <&kp LANGUAGE_1>;
+            bindings = <&kp LANGUAGE_2>;
             key-positions = <13 12>;
         };
 
         kana {
-            bindings = <&kp LANGUAGE_2>;
+            bindings = <&kp LANGUAGE_1>;
             key-positions = <18 19>;
         };
     };
