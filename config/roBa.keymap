@@ -65,6 +65,32 @@
                 #binding-cells = <2>;
                 tapping-term-ms = <150>;
             };
+
+            hrm_r: hrm_r {
+                compatible = "zmk,behavior-hold-tap";
+                label = "HRM Right";
+                bindings = <&kp>, <&kp>;
+
+                #binding-cells = <2>;
+                hold-trigger-key-positions = <5 6 7 8 9 17 18 19 20 29 30>;
+                flavor = "tap-preferred";
+                tapping-term-ms = <200>;
+                hold-while-undecided;
+                hold-trigger-on-release;
+            };
+
+            hrm_l: hrm_l {
+                compatible = "zmk,behavior-hold-tap";
+                label = "HRM_L";
+                bindings = <&kp>, <&kp>;
+
+                #binding-cells = <2>;
+                flavor = "tap-preferred";
+                tapping-term-ms = <200>;
+                hold-while-undecided;
+                hold-trigger-on-release;
+                hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 23 24 25 26 22>;
+            };
         };
     };
 
@@ -73,10 +99,10 @@
 
         default_layer {
             bindings = <
-&kp Q   &kp W   &kp E   &kp R         &kp T                                                              &kp Y               &kp U  &lt 5 I    &kp O    &kp P
-&kp A   &kp S   &kp D   &kp F         &kp G           &trans                      &trans                 &kp H               &kp J  &kp K      &kp L    &kp SEMICOLON
-&kp Z   &kp X   &kp C   &kp V         &kp B           &trans                      &trans                 &kp N               &kp M  &kp COMMA  &kp DOT  &kp COLON
-&trans  &trans  &trans  &my_lt 2 TAB  &my_lt 3 SPACE  &my_shift RSHFT ESCAPE      &my_shift LSHFT ENTER  &my_lt 1 BACKSPACE                             &trans
+&kp Q   &kp W              &kp E                  &kp R              &kp T                                                              &kp Y               &kp U               &lt 5 I                 &kp O               &kp P
+&kp A   &hrm_l LEFT_ALT S  &hrm_l LEFT_CONTROL D  &hrm_l LEFT_GUI F  &kp G           &trans                      &trans                 &kp H               &hrm_r RIGHT_GUI J  &hrm_r RIGHT_CONTROL K  &hrm_r RIGHT_ALT L  &kp SEMICOLON
+&kp Z   &kp X              &kp C                  &kp V              &kp B           &trans                      &trans                 &kp N               &kp M               &kp COMMA               &kp DOT             &kp COLON
+&trans  &trans             &trans                 &my_lt 2 TAB       &my_lt 3 SPACE  &my_shift RSHFT ESCAPE      &my_shift LSHFT ENTER  &my_lt 1 BACKSPACE                                                                  &trans
             >;
         };
 
