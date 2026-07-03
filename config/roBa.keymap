@@ -52,8 +52,8 @@
                 label = "MY_LT";
                 #binding-cells = <2>;
                 flavor = "hold-preferred";
-                tapping-term-ms = <200>;
-                quick-tap-ms = <150>;
+                tapping-term-ms = <150>;
+                quick-tap-ms = <200>;
                 bindings = <&mo>, <&kp>;
             };
 
@@ -64,7 +64,6 @@
 
                 #binding-cells = <2>;
                 tapping-term-ms = <150>;
-                quick-tap-ms = <150>;
             };
         };
     };
@@ -74,7 +73,7 @@
 
         default_layer {
             bindings = <
-&kp Q   &kp W   &kp E   &kp R         &kp T                                                              &kp Y               &kp U  &kp I      &kp O    &kp P
+&kp Q   &kp W   &kp E   &kp R         &kp T                                                              &kp Y               &kp U  &lt 5 I    &kp O    &kp P
 &kp A   &kp S   &kp D   &kp F         &kp G           &trans                      &trans                 &kp H               &kp J  &kp K      &kp L    &kp SEMICOLON
 &kp Z   &kp X   &kp C   &kp V         &kp B           &trans                      &trans                 &kp N               &kp M  &kp COMMA  &kp DOT  &kp COLON
 &trans  &trans  &trans  &my_lt 2 TAB  &my_lt 3 SPACE  &my_shift RSHFT ESCAPE      &my_shift LSHFT ENTER  &my_lt 1 BACKSPACE                             &trans
