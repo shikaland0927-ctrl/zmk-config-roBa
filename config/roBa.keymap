@@ -47,9 +47,9 @@
         };
 
         behaviors {
-            my_lt: Tap {
+            my_lt: my_lt {
                 compatible = "zmk,behavior-hold-tap";
-                label = "LAYER_TAP_BACKSPACE";
+                label = "MY_LT";
                 #binding-cells = <2>;
                 flavor = "hold-preferred";
                 tapping-term-ms = <120>;
