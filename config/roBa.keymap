@@ -16,29 +16,19 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
+        eisuu {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <13 12>;
         };
 
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
+        kana {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <18 19>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <19 20>;
         };
     };
 
@@ -61,17 +51,17 @@
             tapping-term-ms = <200>;
         };
 
-behaviors {
-    my_lt: My Layer Tap {
-        compatible = "zmk,behavior-hold-tap";
-        label = "LAYER_TAP_BACKSPACE";
-        #binding-cells = <2>;
-        flavor = "hold-preferred";
-        tapping-term-ms = <120>;
-        quick-tap-ms = <150>;
-        bindings = <&mo>, <&kp>;
-    };
-};
+        behaviors {
+            my_lt: Tap {
+                compatible = "zmk,behavior-hold-tap";
+                label = "LAYER_TAP_BACKSPACE";
+                #binding-cells = <2>;
+                flavor = "hold-preferred";
+                tapping-term-ms = <120>;
+                quick-tap-ms = <150>;
+                bindings = <&mo>, <&kp>;
+            };
+        };
     };
 
     keymap {
@@ -79,10 +69,10 @@ behaviors {
 
         default_layer {
             bindings = <
-&kp Q   &kp W   &kp E   &kp R   &kp T                              &kp Y   &kp U  &lt 5 I    &kp O    &kp P
-&kp A   &kp S   &kp D   &kp F   &kp G   &trans      &trans         &kp H   &kp J  &kp K      &kp L    &kp SEMICOLON
-&kp Z   &kp X   &kp C   &kp V   &kp B   &trans      &trans         &kp N   &kp M  &kp COMMA  &kp DOT  &kp COLON
-&trans  &trans  &trans  &trans  &trans  &trans      &kp BACKSPACE  &trans                             &trans
+&kp Q   &kp W   &kp E   &kp R   &kp T                       &kp Y               &kp U  &lt 5 I    &kp O    &kp P
+&kp A   &kp S   &kp D   &kp F   &kp G   &trans      &trans  &kp H               &kp J  &kp K      &kp L    &kp SEMICOLON
+&kp Z   &kp X   &kp C   &kp V   &kp B   &trans      &trans  &kp N               &kp M  &kp COMMA  &kp DOT  &kp COLON
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &my_lt 1 BACKSPACE                             &trans
             >;
         };
 
