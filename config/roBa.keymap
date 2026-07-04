@@ -15,8 +15,8 @@
     arrows {
         layers = <2>;
         bindings =
-            <&none>,
-            <&none>,
+            <&kp A>,
+            <&kp B>,
             <&kp LC(UP_ARROW)>,
             <&kp LC(DOWN_ARROW)>;
         tick = <100>;
