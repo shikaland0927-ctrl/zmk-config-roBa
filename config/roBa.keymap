@@ -51,24 +51,19 @@
         macro_tap_exit: macro_tap_exit {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings
-                = <&to 0>
-                , <&macro_param_1to1>
-                , <&kp 0>;
+            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
         };
 
         macro_hold_exit: macro_hold_exit {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings
-                = <&to 0>
-                , <&macro_press>
-                , <&macro_param_1to1>
-                , <&mo 0>
-                , <&macro_pause_for_release>
-                , <&macro_release>
-                , <&macro_param_1to1>
-                , <&mo 0>;
+            bindings =
+                <&to 0>,
+                <&macro_press>,
+                <&macro_param_1to1 &mo MACRO_PLACEHOLDER>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&macro_param_1to1 &mo MACRO_PLACEHOLDER>;
         };
     };
 
@@ -147,7 +142,7 @@
 &kp Q   &kp W              &kp E                  &kp R              &kp T                                                                         &kp Y               &kp U               &lt 5 I                 &kp O               &kp P
 &kp A   &hrm_l LEFT_ALT S  &hrm_l LEFT_CONTROL D  &hrm_l LEFT_GUI F  &kp G           &kp C_BRIGHTNESS_INC             &kp C_VOLUME_UP              &kp H               &hrm_r RIGHT_GUI J  &hrm_r RIGHT_CONTROL K  &hrm_r RIGHT_ALT L  &kp SEMICOLON
 &kp Z   &kp X              &kp C                  &kp V              &kp B           &kp C_BRIGHTNESS_DEC             &kp C_VOLUME_DOWN            &kp N               &kp M               &kp COMMA               &kp DOT             &kp COLON
-&trans  &trans             &trans                 &my_lt 2 TAB       &my_lt 3 SPACE  &my_shift LEFT_SHIFT ESCAPE      &my_shift RIGHT_SHIFT ENTER  &my_lt 1 BACKSPACE                                                                  &kp K_MUTE
+&trans  &trans             &trans                 &my_lt 3 TAB       &my_lt 2 SPACE  &my_shift LEFT_SHIFT ESCAPE      &my_shift RIGHT_SHIFT ENTER  &my_lt 1 BACKSPACE                                                                  &kp K_MUTE
             >;
         };
 
@@ -160,15 +155,6 @@
             >;
         };
 
-        ARROW {
-            bindings = <
-&trans        &kp LC(LEFT_ARROW)        &kp RC(RIGHT_ARROW)        &trans        &trans                        &trans    &trans    &trans  &trans     &trans
-&kp LG(LBKT)  &kp LG(LS(LEFT_BRACKET))  &kp RG(RS(RIGHT_BRACKET))  &kp RG(RBKT)  &trans  &trans      &kp HOME  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp END
-&trans        &trans                    &trans                     &trans        &trans  &trans      &trans    &trans    &trans    &trans  &trans     &trans
-&trans        &trans                    &trans                     &trans        &trans  &trans      &trans    &trans                                 &trans
-            >;
-        };
-
         NUM {
             bindings = <
 &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                       &trans  &kp N7  &kp N8  &kp N9  &kp MINUS
@@ -178,12 +164,21 @@
             >;
         };
 
+        ARROW {
+            bindings = <
+&trans        &kp LC(LEFT_ARROW)        &kp RC(RIGHT_ARROW)        &trans        &trans                        &trans    &trans    &trans  &trans     &trans
+&kp LG(LBKT)  &kp LG(LS(LEFT_BRACKET))  &kp RG(RS(RIGHT_BRACKET))  &kp RG(RBKT)  &trans  &trans      &kp HOME  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp END
+&trans        &trans                    &trans                     &trans        &trans  &trans      &trans    &trans    &trans    &trans  &trans     &trans
+&trans        &trans                    &trans                     &trans        &trans  &trans      &trans    &trans                                 &trans
+            >;
+        };
+
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &to 0                                 &trans
+&trans  &trans  &trans  &trans             &trans                                   &trans                   &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans             &trans               &trans      &trans  &trans                   &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans             &trans               &trans      &trans  &trans                   &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &my_lt_exit 3 TAB  &my_lt_exit 2 SPACE  &trans      &trans  &my_lt_exit 0 BACKSPACE                                &trans
             >;
         };
 
