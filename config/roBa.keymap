@@ -178,7 +178,7 @@
 &trans  &trans  &trans  &trans             &trans                                   &trans                   &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans             &trans               &trans      &trans  &trans                   &mkp MB1  &mkp MB3  &mkp MB2  &trans
 &trans  &trans  &trans  &trans             &trans               &trans      &trans  &trans                   &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &my_lt_exit 3 TAB  &my_lt_exit 2 SPACE  &trans      &trans  &my_lt_exit 0 BACKSPACE                                &trans
+&trans  &trans  &trans  &my_lt_exit 3 TAB  &my_lt_exit 2 SPACE  &trans      &trans  &my_lt_exit 1 BACKSPACE                                &trans
             >;
         };
 
