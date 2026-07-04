@@ -49,7 +49,7 @@
         };
 
         macro_tap_exit: macro_tap_exit {
-            compatible = "zmk,behavior-macro";
+            compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings
                 = <&to 0>
@@ -58,7 +58,7 @@
         };
 
         macro_hold_exit: macro_hold_exit {
-            compatible = "zmk,behavior-macro";
+            compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings
                 = <&to 0>
