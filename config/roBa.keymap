@@ -12,8 +12,12 @@
     scroll-layers = <5>;
 
     arrows {
-        layers = <2>;
-        bindings = <&kp A>, <&kp B>, <&kp LC(UP_ARROW)>, <&kp LC(DOWN_ARROW)>;
+        layers = <3>;
+        bindings =
+            <&kp RIGHT_ARROW>,
+            <&kp LEFT_ARROW>,
+            <&kp LC(UP_ARROW)>,
+            <&kp LC(DOWN_ARROW)>;
 
         tick = <10>;
         wait-ms = <5>;
