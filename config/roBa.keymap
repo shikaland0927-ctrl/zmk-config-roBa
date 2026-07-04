@@ -39,12 +39,13 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LEFT_GUI>,
                 <&macro_press>,
+                <&kp LEFT_GUI>,
+                <&macro_tap>,
                 <&kp TAB>,
                 <&macro_pause_for_release>,
-                <&kp LEFT_GUI>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LEFT_GUI>;
 
             label = "APP_SWICHER";
         };
