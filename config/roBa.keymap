@@ -41,10 +41,10 @@
     };
 
     macros {
-        to_layer_0: to_layer_0 {
+        esc_ml_lt: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&to 0 &macro_param_1to1 &my_to_0 MACRO_PLACEHOLDER BACKSPACE>;
             label = "TO_LAYER_0";
         };
     };
@@ -53,7 +53,7 @@
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
+            bindings = <&mo>, <&esc_ml_lt>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -103,6 +103,16 @@
                 hold-trigger-key-positions = <5 6 7 8 9 16 17 18 19 20 21 28 29 30 31 32 33 40 41 42 37 38 39>;
                 retro-tap;
             };
+
+            my_to_0: my_to_0 {
+                compatible = "zmk,behavior-hold-tap";
+                label = "MY_TO_0";
+                #binding-cells = <2>;
+                flavor = "hold-preferred";
+                tapping-term-ms = <150>;
+                quick-tap-ms = <200>;
+                bindings = <&mo>, <&kp>;
+            };
         };
     };
 
@@ -147,10 +157,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans                 &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                 &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                 &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &to_layer_0 BACKSPACE                                &trans
+&trans  &trans  &trans  &trans  &trans                      &trans                &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &esc_ml_lt BACKSPACE                                &trans
             >;
         };
 
