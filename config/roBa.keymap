@@ -131,10 +131,10 @@
 
         ARROW {
             bindings = <
-&kp LC(LEFT_ARROW)  &trans                    &app_swicher               &kp RC(RIGHT_ARROW)  &trans                        &trans    &trans    &trans  &trans     &trans
-&kp LG(LBKT)        &kp LG(LS(LEFT_BRACKET))  &kp RG(RS(RIGHT_BRACKET))  &kp RG(RBKT)         &trans  &trans      &kp HOME  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp END
-&trans              &trans                    &trans                     &trans               &trans  &trans      &trans    &trans    &trans    &trans  &trans     &trans
-&trans              &trans                    &trans                     &trans               &trans  &trans      &trans    &trans                                 &trans
+&trans        &kp LC(LEFT_ARROW)        &kp RC(RIGHT_ARROW)        &trans        &trans                        &trans    &trans    &trans  &trans     &trans
+&kp LG(LBKT)  &kp LG(LS(LEFT_BRACKET))  &kp RG(RS(RIGHT_BRACKET))  &kp RG(RBKT)  &trans  &trans      &kp HOME  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp END
+&trans        &trans                    &trans                     &trans        &trans  &trans      &trans    &trans    &trans    &trans  &trans     &trans
+&trans        &trans                    &trans                     &trans        &trans  &trans      &trans    &trans                                 &trans
             >;
         };
 
@@ -157,6 +157,15 @@
         };
 
         SCROLL {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
+        };
+
+        layer_6 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
