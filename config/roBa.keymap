@@ -20,7 +20,7 @@
             <&kp LC(UP_ARROW)>,
             <&kp LC(DOWN_ARROW)>;
         tick = <100>;
-        wait-ms = <100>;
+        wait-ms = <10>;
         tap-ms = <5>;
     };
 };
