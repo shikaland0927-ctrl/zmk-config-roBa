@@ -44,7 +44,7 @@
                 <&kp TAB>,
                 <&macro_pause_for_release>,
                 <&kp LEFT_GUI>,
-                <&macro_press>;
+                <&macro_release>;
 
             label = "APP_SWICHER";
         };
