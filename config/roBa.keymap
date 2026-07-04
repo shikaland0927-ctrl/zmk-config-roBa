@@ -41,6 +41,13 @@
     };
 
     macros {
+        esc_ml_lt: to_layer_0 {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&to 0 &macro_param_1to1 &my_to_0 MACRO_PLACEHOLDER BACKSPACE>;
+            label = "TO_LAYER_0";
+        };
+
         macro_tap_exit: macro_tap_exit {
             compatible = "zmk,behavior-macro";
             #binding-cells = <1>;
