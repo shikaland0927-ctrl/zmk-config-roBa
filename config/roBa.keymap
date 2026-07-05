@@ -11,6 +11,7 @@
     automouse-layer = <4>;
     scroll-layers = <5>;
 
+    /*
     arrows {
         layers = <3>;
         bindings =
@@ -23,6 +24,7 @@
         wait-ms = <5>;
         tap-ms = <5>;
     };
+    /*
 };
 
 / {
