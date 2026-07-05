@@ -1,28 +1,51 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <mouse-gesture.dtsi>
 
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
 };
 
+#include <mouse-gesture.dtsi>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+
+&zip_mouse_gesture {
+    stroke-size = <300>; // Optional (default: 200)
+    enable-eager-mode; // Optional, but recommended
+    // always-active; // Optional
+    // suppress-movement; // Optional
+
+    // event-code-x = <INPUT_REL_X>; // Optional (default: INPUT_REL_X)
+    // event-code-y = <INPUT_REL_Y>; // Optional (default: INPUT_REL_Y)
+
+    history_back {
+        pattern = <GESTURE_RIGHT>;
+        bindings = <&kp LA(LEFT)>;
+    };
+
+    history_forward {
+        pattern = <GESTURE_LEFT>;
+        bindings = <&kp LA(RIGHT)>;
+    };
+
+    close_tab {
+        pattern = <GESTURE_DOWN GESTURE_RIGHT>;
+        bindings = <&kp LC(W)>;
+    };
+
+    new_tab {
+        pattern = <GESTURE_DOWN GESTURE_LEFT>;
+        bindings = <&kp LC(T)>;
+    };
+};
+
 &trackball {
     automouse-layer = <4>;
     scroll-layers = <5>;
 
-    arrows {
-        layers = <3>;
-        bindings =
-            <&kp LA(LS(Y))>,
-            <&kp LA(LC(LEFT_ARROW))>,
-            <&kp LA(LC(UP_ARROW))>,
-            <&kp LA(LC(DOWN_ARROW))>;
-
-        tick = <500>;
-        wait-ms = <5>;
-        tap-ms = <5>;
-    };
+    input-processors = <&zip_mouse_gesture>;
 };
 
 / {
@@ -190,6 +213,12 @@
 
         ARROW {
             bindings = <
+                &mouse_gesture // Activates mouse gesture while it is pressed
+                &mouse_gesture_on // Activates mouse gesture on each press
+                &mouse_gesture_off // Deactivates mouse gesture on each press
+                &mouse_gesture_toggle // Toggle mouse gesture on/off on each press
+                &mouse_gesture_kp 0 A // Activates mouse gesture while held, and triggers &kp A on tap
+                &mouse_gesture_mkp 0 RCLK // Activates mouse gesture while held, and triggers right click on tap
 &trans        &kp LC(LEFT_ARROW)        &kp RC(RIGHT_ARROW)        &trans        &trans                        &trans    &trans    &trans  &trans     &trans
 &kp LG(LBKT)  &kp LG(LS(LEFT_BRACKET))  &kp RG(RS(RIGHT_BRACKET))  &kp RG(RBKT)  &trans  &trans      &kp HOME  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp END
 &trans        &trans                    &trans                     &trans        &trans  &trans      &trans    &trans    &trans    &trans  &trans     &trans
