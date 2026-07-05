@@ -18,11 +18,10 @@
     //      <&kp LA(LC(LEFT_ARROW))>,
     //      <&kp LA(LC(UP_ARROW))>,
     //      <&kp LA(LC(DOWN_ARROW))>;
-
     //  tick = <10>;
     //  wait-ms = <5>;
     //  tap-ms = <5>;
-//  };
+    //  };
 };
 
 / {
@@ -143,10 +142,10 @@
 
         ARROW {
             bindings = <
-&trans        &kp LC(LEFT_ARROW)        &kp RC(RIGHT_ARROW)        &trans        &trans                        &trans    &trans    &trans  &trans     &trans
-&kp LG(LBKT)  &kp LG(LS(LEFT_BRACKET))  &kp RG(RS(RIGHT_BRACKET))  &kp RG(RBKT)  &trans  &trans      &kp HOME  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp END
-&trans        &trans                    &trans                     &trans        &trans  &trans      &trans    &trans    &trans    &trans  &trans     &trans
-&trans        &trans                    &trans                     &trans        &trans  &trans      &trans    &trans                                 &trans
+&trans        &kp LC(LEFT_ARROW)        &kp RC(RIGHT_ARROW)        &trans        &trans                        &trans    &trans    &kp LA(LC(UP_ARROW))  &trans     &trans
+&kp LG(LBKT)  &kp LG(LS(LEFT_BRACKET))  &kp RG(RS(RIGHT_BRACKET))  &kp RG(RBKT)  &trans  &trans      &kp HOME  &kp LEFT  &kp DOWN  &kp UP                &kp RIGHT  &kp END
+&trans        &trans                    &trans                     &trans        &trans  &trans      &trans    &trans    &trans    &trans                &trans     &trans
+&trans        &trans                    &trans                     &trans        &trans  &trans      &trans    &trans                                               &trans
             >;
         };
 
