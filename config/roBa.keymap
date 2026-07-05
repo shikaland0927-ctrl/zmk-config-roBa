@@ -13,7 +13,7 @@
     scroll-layers = <5>;
 
     arrows {
-        layers = <6>;
+        layers = <3>;
         bindings =
             <&kp LA(LS(Y))>,
             <&kp LA(LC(LEFT_ARROW))>,
