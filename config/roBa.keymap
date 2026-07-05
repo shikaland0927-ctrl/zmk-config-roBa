@@ -29,18 +29,13 @@
         compatible = "zmk,combos";
 
         kana {
-            bindings = <&kp LANGUAGE_1>;
+            bindings = <&to_layer_0 LANGUAGE_1>;
             key-positions = <18 19>;
         };
 
         eisuu {
-            bindings = <&kp LANGUAGE_2>;
+            bindings = <&to_layer_0 LANGUAGE_2>;
             key-positions = <13 12>;
-        };
-
-        to_gesture {
-            bindings = <&sl 0>;
-            key-positions = <19 20>;
         };
     };
 
@@ -154,7 +149,7 @@
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &to 0                                 &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
         };
 
