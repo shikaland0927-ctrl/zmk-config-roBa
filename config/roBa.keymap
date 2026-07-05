@@ -47,6 +47,23 @@
 };
 
 / {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                &mouse_gesture // Activates mouse gesture while it is pressed
+                &mouse_gesture_on // Activates mouse gesture on each press
+                &mouse_gesture_off // Deactivates mouse gesture on each press
+                &mouse_gesture_toggle // Toggle mouse gesture on/off on each press
+                &mouse_gesture_kp 0 A // Activates mouse gesture while held, and triggers &kp A on tap
+                &mouse_gesture_mkp 0 RCLK // Activates mouse gesture while held, and triggers right click on tap
+            >;
+        };
+    };
+};
+
+/ {
     combos {
         compatible = "zmk,combos";
 
@@ -211,12 +228,6 @@
 
         ARROW {
             bindings = <
-                &mouse_gesture // Activates mouse gesture while it is pressed
-                &mouse_gesture_on // Activates mouse gesture on each press
-                &mouse_gesture_off // Deactivates mouse gesture on each press
-                &mouse_gesture_toggle // Toggle mouse gesture on/off on each press
-                &mouse_gesture_kp 0 A // Activates mouse gesture while held, and triggers &kp A on tap
-                &mouse_gesture_mkp 0 RCLK // Activates mouse gesture while held, and triggers right click on tap
 &trans        &kp LC(LEFT_ARROW)        &kp RC(RIGHT_ARROW)        &trans        &trans                        &trans    &trans    &trans  &trans     &trans
 &kp LG(LBKT)  &kp LG(LS(LEFT_BRACKET))  &kp RG(RS(RIGHT_BRACKET))  &kp RG(RBKT)  &trans  &trans      &kp HOME  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp END
 &trans        &trans                    &trans                     &trans        &trans  &trans      &trans    &trans    &trans    &trans  &trans     &trans
