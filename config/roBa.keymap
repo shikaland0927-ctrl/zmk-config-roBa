@@ -220,10 +220,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans             &trans                                                                                       &trans                   &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans             &trans               &trans                                &trans                            &trans                   &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans             &trans               &trans                                &trans                            &trans                   &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &my_lt_exit 3 TAB  &my_lt_exit 2 SPACE  &my_shift_exit LEFT_SHIFT ESCAPE      &my_shift_exit RIGHT_SHIFT ENTER  &my_lt_exit 1 BACKSPACE                          &trans
+&trans  &trans                  &trans                      &trans                  &trans                                                                                       &trans                   &trans  &trans  &trans  &trans
+&trans  &hrm_l_exit LEFT_ALT S  &hrm_l_exit LEFT_CONTROL D  &hrm_l_exit LEFT_GUI F  &trans               &trans                                &trans                            &trans                   &trans  &trans  &trans  &trans
+&trans  &trans                  &trans                      &trans                  &trans               &trans                                &trans                            &trans                   &trans  &trans  &trans  &trans
+&trans  &trans                  &trans                      &my_lt_exit 3 TAB       &my_lt_exit 2 SPACE  &my_shift_exit LEFT_SHIFT ESCAPE      &my_shift_exit RIGHT_SHIFT ENTER  &my_lt_exit 1 BACKSPACE                          &trans
             >;
         };
     };
