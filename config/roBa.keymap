@@ -103,16 +103,6 @@
                 hold-trigger-key-positions = <5 6 7 8 9 16 17 18 19 20 21 28 29 30 31 32 33 40 41 42 37 38 39>;
                 retro-tap;
             };
-
-            my_sl: my_sl {
-                compatible = "zmk,behavior-hold-tap";
-                label = "MY_SL";
-                #binding-cells = <2>;
-                flavor = "hold-preferred";
-                tapping-term-ms = <150>;
-                quick-tap-ms = <200>;
-                bindings = <&sl>, <&kp>;
-            };
         };
     };
 
@@ -121,7 +111,7 @@
 
         default_layer {
             bindings = <
-&kp Q   &my_sl 7 W         &my_sl 6 E             &kp R              &kp T                                                                         &kp Y               &kp U               &my_lt 5 I              &kp O               &kp P
+&kp Q   &kp W              &kp E                  &kp R              &kp T                                                                         &kp Y               &kp U               &my_lt 5 I              &kp O               &kp P
 &kp A   &hrm_l LEFT_ALT S  &hrm_l LEFT_CONTROL D  &hrm_l LEFT_GUI F  &kp G           &kp C_BRIGHTNESS_INC             &kp C_VOLUME_UP              &kp H               &hrm_r RIGHT_GUI J  &hrm_r RIGHT_CONTROL K  &hrm_r RIGHT_ALT L  &kp SEMICOLON
 &kp Z   &kp X              &kp C                  &kp V              &kp B           &kp C_BRIGHTNESS_DEC             &kp C_VOLUME_DOWN            &kp N               &kp M               &kp COMMA               &kp DOT             &kp COLON
 &trans  &trans             &trans                 &my_lt 3 TAB       &my_lt 2 SPACE  &my_shift LEFT_SHIFT ESCAPE      &my_shift RIGHT_SHIFT ENTER  &my_lt 1 BACKSPACE                                                                  &kp K_MUTE
