@@ -113,7 +113,7 @@
 &kp Q   &kp W              &kp E                  &kp R              &kp T                                                                         &kp Y               &kp U               &my_lt 5 I              &kp O               &kp P
 &kp A   &hrm_l LEFT_ALT S  &hrm_l LEFT_CONTROL D  &hrm_l LEFT_GUI F  &kp G           &kp C_BRIGHTNESS_INC             &kp C_VOLUME_UP              &kp H               &hrm_r RIGHT_GUI J  &hrm_r RIGHT_CONTROL K  &hrm_r RIGHT_ALT L  &kp SEMICOLON
 &kp Z   &kp X              &kp C                  &kp V              &kp B           &kp C_BRIGHTNESS_DEC             &kp C_VOLUME_DOWN            &kp N               &kp M               &kp COMMA               &kp DOT             &kp COLON
-&trans  &trans             &trans                 &my_lt 4 TAB       &my_lt 2 SPACE  &my_shift LEFT_SHIFT ESCAPE      &my_shift RIGHT_SHIFT ENTER  &my_lt 1 BACKSPACE                                                                  &kp K_MUTE
+&trans  &trans             &trans                 &my_lt 5 TAB       &my_lt 2 SPACE  &my_shift LEFT_SHIFT ESCAPE      &my_shift RIGHT_SHIFT ENTER  &my_lt 1 BACKSPACE                                                                  &kp K_MUTE
             >;
         };
 
@@ -135,21 +135,21 @@
             >;
         };
 
-        MOUSE {
-            bindings = <
-&none  &none  &none  &none  &none                    &none  &none     &mo 5     &none     &none
-&none  &none  &none  &none  &none  &none      &none  &none  &mkp MB1  &mkp MB3  &mkp MB2  &to 0
-&none  &none  &none  &none  &none  &none      &none  &none  &none     &none     &none     &none
-&none  &none  &none  &mo 4  &none  &none      &none  &none                                &none
-            >;
-        };
-
         ARROW {
             bindings = <
 &trans        &kp LC(LEFT_ARROW)        &kp RC(RIGHT_ARROW)        &trans        &trans                        &trans    &trans    &kp LA(LC(UP_ARROW))  &trans     &trans
 &kp LG(LBKT)  &kp LG(LS(LEFT_BRACKET))  &kp RG(RS(RIGHT_BRACKET))  &kp RG(RBKT)  &trans  &trans      &kp HOME  &kp LEFT  &kp DOWN  &kp UP                &kp RIGHT  &kp END
 &trans        &trans                    &trans                     &trans        &trans  &trans      &trans    &trans    &trans    &trans                &trans     &trans
 &trans        &trans                    &trans                     &trans        &trans  &trans      &trans    &trans                                               &trans
+            >;
+        };
+
+        MOUSE {
+            bindings = <
+&none  &none  &none  &none  &none                    &none  &none     &mo 5     &none     &none
+&none  &none  &none  &none  &none  &none      &none  &none  &mkp MB1  &mkp MB3  &mkp MB2  &to 0
+&none  &none  &none  &none  &none  &none      &none  &none  &none     &none     &none     &none
+&none  &none  &none  &none  &none  &none      &none  &none                                &none
             >;
         };
 
