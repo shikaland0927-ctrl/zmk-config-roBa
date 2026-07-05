@@ -167,6 +167,18 @@
                 hold-trigger-key-positions = <5 6 7 8 9 16 17 18 19 20 21 28 29 30 31 32 33 40 41 42 37 38 39>;
                 retro-tap;
             };
+
+            hrm_r_exit: hrm_r_exit {
+                compatible = "zmk,behavior-hold-tap";
+                label = "HRM_R_EXIT";
+                bindings = <&macro_kp_hold_exit>, <&macro_tap_exit>;
+
+                #binding-cells = <2>;
+                hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 15 22 23 24 25 26 27 34 35 36 37 38 39 41 40>;
+                flavor = "balanced";
+                tapping-term-ms = <2000>;
+                retro-tap;
+            };
         };
     };
 
@@ -220,10 +232,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans                  &trans                      &trans                  &trans                                                                                       &trans                   &trans  &trans  &trans  &trans
-&trans  &hrm_l_exit LEFT_ALT S  &hrm_l_exit LEFT_CONTROL D  &hrm_l_exit LEFT_GUI F  &trans               &trans                                &trans                            &trans                   &trans  &trans  &trans  &trans
-&trans  &trans                  &trans                      &trans                  &trans               &trans                                &trans                            &trans                   &trans  &trans  &trans  &trans
-&trans  &trans                  &trans                      &my_lt_exit 3 TAB       &my_lt_exit 2 SPACE  &my_shift_exit LEFT_SHIFT ESCAPE      &my_shift_exit RIGHT_SHIFT ENTER  &my_lt_exit 1 BACKSPACE                          &trans
+&trans  &trans                  &trans                      &trans                  &trans                                                                                       &trans                   &trans                   &trans                       &trans                   &trans
+&trans  &hrm_l_exit LEFT_ALT S  &hrm_l_exit LEFT_CONTROL D  &hrm_l_exit LEFT_GUI F  &trans               &trans                                &trans                            &trans                   &hrm_r_exit RIGHT_GUI J  &hrm_r_exit RIGHT_CONTROL K  &hrm_r_exit RIGHT_ALT L  &trans
+&trans  &trans                  &trans                      &trans                  &trans               &trans                                &trans                            &trans                   &trans                   &trans                       &trans                   &trans
+&trans  &trans                  &trans                      &my_lt_exit 3 TAB       &my_lt_exit 2 SPACE  &my_shift_exit LEFT_SHIFT ESCAPE      &my_shift_exit RIGHT_SHIFT ENTER  &my_lt_exit 1 BACKSPACE                                                                                 &trans
             >;
         };
     };
