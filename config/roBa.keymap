@@ -209,7 +209,7 @@
         SCROLL {
             bindings = <
 &trans  &trans  &trans  &trans             &trans                                                                                       &trans                   &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans             &trans               &trans                                &trans                            &trans                   &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans             &trans               &trans                                &trans                            &trans                   &trans  &trans  &trans  &to 0
 &trans  &trans  &trans  &trans             &trans               &trans                                &trans                            &trans                   &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &my_lt_exit 3 TAB  &my_lt_exit 2 SPACE  &my_shift_exit LEFT_SHIFT ESCAPE      &my_shift_exit RIGHT_SHIFT ENTER  &my_lt_exit 1 BACKSPACE                          &trans
             >;
