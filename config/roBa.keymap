@@ -125,10 +125,10 @@
 
         default_layer {
             bindings = <
-&kp Q   &kp W              &kp E                  &kp R              &kp T                                                                         &kp Y               &kp U               &my_lt 5 I              &kp O               &kp P
-&kp A   &hrm_l LEFT_ALT S  &hrm_l LEFT_CONTROL D  &hrm_l LEFT_GUI F  &kp G           &kp C_BRIGHTNESS_INC             &kp C_VOLUME_UP              &kp H               &hrm_r RIGHT_GUI J  &hrm_r RIGHT_CONTROL K  &hrm_r RIGHT_ALT L  &kp SEMICOLON
-&kp Z   &kp X              &kp C                  &kp V              &kp B           &kp C_BRIGHTNESS_DEC             &kp C_VOLUME_DOWN            &kp N               &kp M               &kp COMMA               &kp DOT             &kp COLON
-&trans  &trans             &trans                 &my_lt 3 TAB       &my_lt 2 SPACE  &my_shift LEFT_SHIFT ESCAPE      &my_shift RIGHT_SHIFT ENTER  &my_lt 1 BACKSPACE                                                                  &kp K_MUTE
+&kp Q              &kp W              &kp E                  &kp R         &kp T                                                                         &kp Y               &kp U  &my_lt 5 I              &kp O               &kp P
+&hrm_l LEFT_GUI A  &hrm_l LEFT_ALT S  &hrm_l LEFT_CONTROL D  &kp F         &kp G           &kp C_BRIGHTNESS_INC             &kp C_VOLUME_UP              &kp H               &kp J  &hrm_r RIGHT_CONTROL K  &hrm_r RIGHT_ALT L  &hrm_r RIGHT_GUI SEMICOLON
+&kp Z              &kp X              &kp C                  &kp V         &kp B           &kp C_BRIGHTNESS_DEC             &kp C_VOLUME_DOWN            &kp N               &kp M  &kp COMMA               &kp DOT             &kp COLON
+&trans             &trans             &trans                 &my_lt 3 TAB  &my_lt 2 SPACE  &my_shift LEFT_SHIFT ESCAPE      &my_shift RIGHT_SHIFT ENTER  &my_lt 1 BACKSPACE                                                     &kp K_MUTE
             >;
         };
 
