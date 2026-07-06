@@ -15,7 +15,7 @@
         layers = <6>;
         bindings =
             <&kp LA(LC(RIGHT_ARROW))>,
-            <&kp LA(LC(LEFT_ARROW))>,
+            <&kp LG(LC(F))>,
             <&kp LA(LC(UP_ARROW))>,
             <&kp LA(LC(DOWN_ARROW))>;
 
