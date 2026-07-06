@@ -158,7 +158,7 @@
                 label = "MY_LT_TO_LAYER_0";
                 #binding-cells = <2>;
                 flavor = "hold-preferred";
-                tapping-term-ms = <10>;
+                tapping-term-ms = <150>;
                 quick-tap-ms = <200>;
                 bindings = <&to_layer_0_mo>, <&to_layer_0_kp>;
             };
