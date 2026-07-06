@@ -12,16 +12,17 @@
     scroll-layers = <5>;
 
     arrows {
-     layers = <6>;
-     bindings =
-         <&kp LA(LC(RIGHT_ARROW))>,
-         <&kp LA(LC(LEFT_ARROW))>,
-         <&kp LA(LC(UP_ARROW))>,
-         <&kp LA(LC(DOWN_ARROW))>;
-     tick = <10>;
-     wait-ms = <5>;
-     tap-ms = <5>;
-     };
+        layers = <6>;
+        bindings =
+            <&kp LA(LC(RIGHT_ARROW))>,
+            <&kp LA(LC(LEFT_ARROW))>,
+            <&kp LA(LC(UP_ARROW))>,
+            <&kp LA(LC(DOWN_ARROW))>;
+
+        tick = <10>;
+        wait-ms = <5>;
+        tap-ms = <5>;
+    };
 };
 
 / {
@@ -147,13 +148,22 @@
         MOUSE {
             bindings = <
 &none                 &kp LC(LEFT_ARROW)        &kp RC(RIGHT_ARROW)        &none                  &none                    &none  &kp LC(LA(UP_ARROW))  &mo 5     &kp LA(LS(Y))  &none
-&kp LG(LEFT_BRACKET)  &kp LG(LS(LEFT_BRACKET))  &kp RG(RS(RIGHT_BRACKET))  &kp RG(RIGHT_BRACKET)  &none  &none      &none  &none  &mkp MB1              &mkp MB3  &mkp MB2       &none
-&none                 &none                     &none                      &none                  &none  &none      &none  &none  &kp LG(C)             &none     &kp LG(V)      &none
+&kp LG(LEFT_BRACKET)  &kp LG(LS(LEFT_BRACKET))  &kp RG(RS(RIGHT_BRACKET))  &kp RG(RIGHT_BRACKET)  &none  &none      &none  &none  &mkp MB1              &mkp MB3  &mkp MB2       &to 0
+&none                 &none                     &none                      &none                  &none  &none      &none  &none  &kp LG(C)             &sl 6     &kp LG(V)      &none
 &none                 &none                     &none                      &none                  &none  &none      &none  &none                                                 &none
             >;
         };
 
         SCROLL {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
+        };
+
+        GESTURE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
