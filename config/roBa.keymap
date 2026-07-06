@@ -24,13 +24,13 @@
         tap-ms = <5>;
     };
 
-    gesture {
+    window {
         layers = <7>;
         bindings =
-            <&kp LC(RIGHT_ARROW)>,
-            <&kp LC(LEFT_ARROW)>,
-            <&kp LC(UP_ARROW)>,
-            <&kp LC(DOWN_ARROW)>;
+            <&kp LG(LC(RIGHT_ARROW))>,
+            <&kp LG(LC(LEFT_ARROW))>,
+            <&kp LG(LC(UP_ARROW))>,
+            <&kp LG(LC(DOWN_ARROW))>;
 
         tick = <10>;
         wait-ms = <5>;
