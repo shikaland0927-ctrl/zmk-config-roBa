@@ -170,7 +170,7 @@
 
         default_layer {
             bindings = <
-&kp Q                 &kp W                 &kp E                  &kp R         &kp T                                                                   &kp Y               &kp U  &my_lt 6 I              &kp O               &kp P
+&kp Q                 &kp W                 &kp E                  &kp R         &kp T                                                                   &kp Y               &kp U  &my_lt 5 I              &kp O               &kp P
 &hrm_l LEFT_GUI A     &hrm_l LEFT_ALT S     &hrm_l LEFT_CONTROL D  &kp F         &kp G           &kp C_BRIGHTNESS_INC          &kp C_VOLUME_UP           &kp H               &kp J  &hrm_r RIGHT_CONTROL K  &hrm_r RIGHT_ALT L  &hrm_r RIGHT_GUI SEMICOLON
 &kp Z                 &kp X                 &kp C                  &kp V         &kp B           &kp C_BRIGHTNESS_DEC          &kp C_VOLUME_DOWN         &kp N               &kp M  &kp COMMA               &kp DOT             &my_mt LC(LA(LS(LEFT_GUI))) COLON
 &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(N5))         &my_lt 2 TAB  &my_lt 1 ENTER  &my_mt LEFT_SHIFT ESCAPE      &my_mt RIGHT_SHIFT SPACE  &my_lt 3 BACKSPACE                                                     &kp LG(LC(Q))
@@ -197,10 +197,10 @@
 
         ARROW {
             bindings = <
-&trans        &trans                    &trans                     &trans        &trans                        &trans    &kp LC(LEFT_ARROW)  &kp LA(TAB)  &kp LC(RIGHT_ARROW)  &trans
-&kp LG(LBKT)  &kp LG(LS(LEFT_BRACKET))  &kp RG(RS(RIGHT_BRACKET))  &kp RG(RBKT)  &trans  &trans      &kp HOME  &kp LEFT  &kp DOWN            &kp UP       &kp RIGHT            &kp END
-&trans        &trans                    &trans                     &trans        &trans  &trans      &trans    &trans    &trans              &trans       &trans               &trans
-&trans        &trans                    &trans                     &trans        &trans  &trans      &trans    &trans                                                          &trans
+&trans        &trans                    &trans                     &trans        &trans                        &trans    &kp LC(LEFT_ARROW)  &trans  &kp LC(RIGHT_ARROW)  &trans
+&kp LG(LBKT)  &kp LG(LS(LEFT_BRACKET))  &kp RG(RS(RIGHT_BRACKET))  &kp RG(RBKT)  &trans  &trans      &kp HOME  &kp LEFT  &kp DOWN            &kp UP  &kp RIGHT            &kp END
+&trans        &trans                    &trans                     &trans        &trans  &trans      &trans    &trans    &trans              &trans  &trans               &trans
+&trans        &trans                    &trans                     &trans        &trans  &trans      &trans    &trans                                                     &trans
             >;
         };
 
