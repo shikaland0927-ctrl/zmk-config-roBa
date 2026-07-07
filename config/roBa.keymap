@@ -160,6 +160,8 @@
                 flavor = "hold-preferred";
                 tapping-term-ms = <150>;
                 bindings = <&to_layer_0_mo>, <&to_layer_0_kp>;
+
+                quick-tap-ms = <200>;
             };
         };
     };
