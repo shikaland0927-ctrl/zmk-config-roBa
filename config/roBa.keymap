@@ -211,7 +211,7 @@
 
         default_layer {
             bindings = <
-&kp Q                 &kp W                 &kp E                  &kp R         &kp T                                                                   &kp Y               &kp U  &my_lt 5 I              &kp O               &kp P
+&kp Q                 &kp W                 &kp E                  &kp R         &kp T                                                                   &kp Y               &kp U  &lt 5 I                 &kp O               &kp P
 &hrm_l LEFT_GUI A     &hrm_l LEFT_ALT S     &hrm_l LEFT_CONTROL D  &kp F         &kp G           &kp C_BRIGHTNESS_INC          &kp C_VOLUME_UP           &kp H               &kp J  &hrm_r RIGHT_CONTROL K  &hrm_r RIGHT_ALT L  &hrm_r RIGHT_GUI SEMICOLON
 &kp Z                 &kp X                 &kp C                  &kp V         &kp B           &kp C_BRIGHTNESS_DEC          &kp C_VOLUME_DOWN         &kp N               &kp M  &kp COMMA               &kp DOT             &my_mt LC(LA(LS(LEFT_GUI))) COLON
 &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(N5))         &my_lt 2 TAB  &my_lt 1 ENTER  &my_mt LEFT_SHIFT ESCAPE      &my_mt RIGHT_SHIFT SPACE  &my_lt 3 BACKSPACE                                                     &kp LG(LC(Q))
