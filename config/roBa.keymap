@@ -163,6 +163,16 @@
 
                 hold-while-undecided;
             };
+
+            my_lt_to_sl: my_lt_to_sl {
+                compatible = "zmk,behavior-hold-tap";
+                label = "MY_LT_TO_SL";
+                #binding-cells = <2>;
+                flavor = "hold-preferred";
+                tapping-term-ms = <150>;
+                quick-tap-ms = <200>;
+                bindings = <&sl>, <&kp>;
+            };
         };
     };
 
@@ -198,19 +208,19 @@
 
         ARROW {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                        &kp LC(LEFT_ARROW)  &kp LG(LS(LEFT_BRACKET))  &my_lt 5 RG(RS(RIGHT_BRACKET))  &kp RC(RIGHT_ARROW)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &kp HOME  &kp LEFT            &kp DOWN                  &kp UP                          &kp RIGHT            &kp END
-&trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans              &mkp MB4                  &kp LG(SPACE)                   &mkp MB5             &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans                                                                                             &trans
+&trans  &trans  &trans  &trans  &trans                        &kp LC(LEFT_ARROW)  &my_lt_to_sl 6 LG(LS(LEFT_BRACKET))  &my_lt 5 RG(RS(RIGHT_BRACKET))  &my_lt_to_sl 7 RC(RIGHT_ARROW)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp HOME  &kp LEFT            &kp DOWN                             &kp UP                          &kp RIGHT                       &kp END
+&trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans              &mkp MB4                             &kp LG(SPACE)                   &mkp MB5                        &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans                                                                                                                   &trans
             >;
         };
 
         MOUSE {
             bindings = <
-&kp_to_layer_0 LG(Q)  &kp_to_layer_0 LG(W)  &none                 &kp_to_layer_0 LG(R)                        &kp_to_layer_0 LG(T)                                                             &kp LC(LEFT_ARROW)             &kp LG(LS(LEFT_BRACKET))  &my_lt 5 RG(RS(RIGHT_BRACKET))  &kp RC(RIGHT_ARROW)  &none
-&kp_to_layer_0 LG(A)  &none                 &none                 &none                                       &none                      &trans                     &trans                     &none                          &mkp MB1                  &mkp MB3                        &mkp MB2             &none
-&kp_to_layer_0 LG(Z)  &kp_to_layer_0 LG(X)  &kp_to_layer_0 LG(C)  &kp_to_layer_0 LG(V)                        &none                      &trans                     &trans                     &none                          &mkp MB4                  &kp_to_layer_0 LG(SPACE)        &mkp MB5             &none
-&trans                &trans                &trans                &my_mt_to_layer_0 LC(LA(LS(LEFT_GUI))) TAB  &my_lt_to_layer_0 2 ENTER  &kp_to_layer_0 ESCAPE      &my_lt_to_layer_0 3 SPACE  &my_lt_to_layer_0 1 BACKSPACE                                                                                 &none
+&kp_to_layer_0 LG(Q)  &kp_to_layer_0 LG(W)  &none                 &kp_to_layer_0 LG(R)                        &kp_to_layer_0 LG(T)                                                             &kp LC(LEFT_ARROW)             &my_lt_to_sl 6 LG(LS(LEFT_BRACKET))  &my_lt 5 RG(RS(RIGHT_BRACKET))  &my_lt_to_sl 7 RC(RIGHT_ARROW)  &none
+&kp_to_layer_0 LG(A)  &none                 &none                 &none                                       &none                      &trans                     &trans                     &none                          &mkp MB1                             &mkp MB3                        &mkp MB2                        &none
+&kp_to_layer_0 LG(Z)  &kp_to_layer_0 LG(X)  &kp_to_layer_0 LG(C)  &kp_to_layer_0 LG(V)                        &none                      &trans                     &trans                     &none                          &mkp MB4                             &kp_to_layer_0 LG(SPACE)        &mkp MB5                        &none
+&trans                &trans                &trans                &my_mt_to_layer_0 LC(LA(LS(LEFT_GUI))) TAB  &my_lt_to_layer_0 2 ENTER  &kp_to_layer_0 ESCAPE      &my_lt_to_layer_0 3 SPACE  &my_lt_to_layer_0 1 BACKSPACE                                                                                                       &none
             >;
         };
 
