@@ -217,10 +217,10 @@
 
         MOUSE {
             bindings = <
-&kp LG(Q)  &kp LG(W)                    &none                      &kp LG(R)                                   &kp LG(T)                                                                        &kp LC(LEFT_ARROW)             &my_lt_to_sl 6 LG(LS(LEFT_BRACKET))  &my_lt 5 RG(RS(RIGHT_BRACKET))  &my_lt_to_sl 7 RC(RIGHT_ARROW)  &none
-&kp LG(A)  &kp_to_layer_0 LEFT_CONTROL  &kp_to_layer_0 LEFT_SHIFT  &kp_to_layer_0 LEFT_GUI                     &none                      &trans                     &trans                     &none                          &mkp MB1                             &mkp MB3                        &mkp MB2                        &none
-&kp LG(Z)  &kp LG(X)                    &kp LG(C)                  &kp LG(V)                                   &none                      &trans                     &trans                     &none                          &mkp MB4                             &kp_to_layer_0 LG(SPACE)        &mkp MB5                        &none
-&trans     &trans                       &trans                     &my_mt_to_layer_0 LC(LA(LS(LEFT_GUI))) TAB  &my_lt_to_layer_0 2 ENTER  &kp_to_layer_0 ESCAPE      &my_lt_to_layer_0 3 SPACE  &my_lt_to_layer_0 1 BACKSPACE                                                                                                       &none
+&kp LG(Q)  &kp LG(W)                      &none                        &kp LG(R)                                   &kp LG(T)                                                                        &kp LC(LEFT_ARROW)             &my_lt_to_sl 6 LG(LS(LEFT_BRACKET))  &my_lt 5 RG(RS(RIGHT_BRACKET))  &my_lt_to_sl 7 RC(RIGHT_ARROW)  &none
+&kp LG(A)  &hold_to_layer_0 LEFT_CONTROL  &hold_to_layer_0 LEFT_SHIFT  &hold_to_layer_0 LEFT_GUI                   &none                      &trans                     &trans                     &none                          &mkp MB1                             &mkp MB3                        &mkp MB2                        &none
+&kp LG(Z)  &kp LG(X)                      &kp LG(C)                    &kp LG(V)                                   &none                      &trans                     &trans                     &none                          &mkp MB4                             &kp_to_layer_0 LG(SPACE)        &mkp MB5                        &none
+&trans     &trans                         &trans                       &my_mt_to_layer_0 LC(LA(LS(LEFT_GUI))) TAB  &my_lt_to_layer_0 2 ENTER  &kp_to_layer_0 ESCAPE      &my_lt_to_layer_0 3 SPACE  &my_lt_to_layer_0 1 BACKSPACE                                                                                                       &none
             >;
         };
 
