@@ -177,8 +177,7 @@
                 quick-tap-ms = <200>;
                 bindings = <&mo>, <&kp>;
 
-                require-prior-idle-ms = <150>;
-                retro-tap;
+                hold-while-undecided;
             };
         };
     };
