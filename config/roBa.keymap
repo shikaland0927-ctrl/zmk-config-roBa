@@ -45,12 +45,12 @@
         compatible = "zmk,combos";
 
         kana {
-            bindings = <&kp_to_layer_0 LANGUAGE_1>;
+            bindings = <&my_mt_to_layer_0 RS(RIGHT_GUI) LANGUAGE_1>;
             key-positions = <18 19>;
         };
 
         eisuu {
-            bindings = <&kp_to_layer_0 LANGUAGE_2>;
+            bindings = <&my_mt_to_layer_0 LS(LEFT_GUI) LANGUAGE_2>;
             key-positions = <13 12>;
         };
 
