@@ -9,10 +9,10 @@
 
 &trackball {
     automouse-layer = <4>;
-    scroll-layers = <5>;
+    scroll-layers = <7>;
 
     gesture {
-        layers = <6>;
+        layers = <5>;
         bindings =
             <&kp LG(LC(F))>,
             <&kp LA(LC(LEFT_ARROW))>,
@@ -25,7 +25,7 @@
     };
 
     window {
-        layers = <7>;
+        layers = <6>;
         bindings =
             <&kp LG(LC(RIGHT_ARROW))>,
             <&kp LG(LC(LEFT_ARROW))>,
