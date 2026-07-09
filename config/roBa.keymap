@@ -240,7 +240,7 @@
             bindings = <
 &trans        &trans                    &trans                     &trans        &trans                        &trans    &kp LC(LEFT_ARROW)  &kp LG(SPACE)  &kp RC(RIGHT_ARROW)  &trans
 &kp LG(LBKT)  &kp LG(LS(LEFT_BRACKET))  &kp RG(RS(RIGHT_BRACKET))  &kp RG(RBKT)  &trans  &trans      &kp HOME  &kp LEFT  &kp DOWN            &kp UP         &kp RIGHT            &kp END
-&trans        &trans                    &trans                     &trans        &trans  &trans      &trans    &trans    &trans              &trans         &trans               &trans
+&trans        &trans                    &trans                     &trans        &trans  &trans      &trans    &trans    &mkp MB4            &kp LG(SPACE)  &mkp MB5             &trans
 &trans        &trans                    &trans                     &trans        &trans  &trans      &trans    &trans                                                            &trans
             >;
         };
