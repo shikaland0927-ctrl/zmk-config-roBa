@@ -21,13 +21,13 @@
             <&kp LA(LC(UP_ARROW))>,
             <&kp LA(LC(DOWN_ARROW))>;
 
-        tick = <30>;
+        tick = <100>;
         wait-ms = <5>;
         tap-ms = <5>;
     };
 
     window {
-        layers = <7>;
+        layers = <100>;
         bindings =
             <&kp LG(LC(RIGHT_ARROW))>,
             <&kp LG(LC(LEFT_ARROW))>,
