@@ -58,46 +58,6 @@
             bindings = <&kp K_MUTE>;
             key-positions = <16 28>;
         };
-
-        ctrl+option_right {
-            bindings = <&kp RA(RIGHT_CONTROL)>;
-            key-positions = <19 20>;
-        };
-
-        cmd+option_right {
-            bindings = <&kp RA(RIGHT_GUI)>;
-            key-positions = <20 21>;
-        };
-
-        cmd+ctrl_right {
-            bindings = <&kp RC(RIGHT_GUI)>;
-            key-positions = <21 19>;
-        };
-
-        cmd+ctrl+option_right {
-            bindings = <&kp RC(RA(RIGHT_GUI))>;
-            key-positions = <19 20 21>;
-        };
-
-        ctrl+option_left {
-            bindings = <&kp LA(LEFT_CONTROL)>;
-            key-positions = <11 12>;
-        };
-
-        cmd+option_left {
-            bindings = <&kp LA(LEFT_GUI)>;
-            key-positions = <10 11>;
-        };
-
-        cmd+ctrl_left {
-            bindings = <&kp LC(LEFT_GUI)>;
-            key-positions = <10 12>;
-        };
-
-        cmd+ctrl+option_left {
-            bindings = <&kp LA(LC(LEFT_GUI))>;
-            key-positions = <10 11 12>;
-        };
     };
 
     macros {
