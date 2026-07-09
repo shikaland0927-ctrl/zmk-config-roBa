@@ -97,6 +97,17 @@
 
     behaviors {
         behaviors {
+            fast_lt: fast_lt {
+    compatible = "zmk,behavior-hold-tap";
+    label = "FAST_LT";
+    #binding-cells = <2>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <150>;
+    quick-tap-ms = <175>;
+    hold-while-undecided;
+    bindings = <&mo>, <&kp>;
+};
+
             my_lt: my_lt {
                 compatible = "zmk,behavior-hold-tap";
                 label = "MY_LT";
