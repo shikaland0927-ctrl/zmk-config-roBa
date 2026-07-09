@@ -168,18 +168,18 @@
                 hold-while-undecided;
             };
 
-my_lt_mouse: my_lt_mouse {
-    compatible = "zmk,behavior-hold-tap";
-    label = "MY_LT_MOUSE";
-    #binding-cells = <2>;
-    flavor = "balanced";
-    tapping-term-ms = <250>;
-    quick-tap-ms = <200>;
-    require-prior-idle-ms = <175>;
-    bindings = <&mo>, <&kp>;
+            my_lt_mouse: my_lt_mouse {
+                compatible = "zmk,behavior-hold-tap";
+                label = "MY_LT_MOUSE";
+                #binding-cells = <2>;
+                flavor = "balanced";
+                tapping-term-ms = <250>;
+                quick-tap-ms = <200>;
+                require-prior-idle-ms = <175>;
+                bindings = <&mo>, <&kp>;
 
-    hold-while-undecided;
-};
+                hold-while-undecided;
+            };
         };
     };
 
@@ -224,7 +224,7 @@ my_lt_mouse: my_lt_mouse {
 
         MOUSE {
             bindings = <
-&kp LG(Q)  &kp LG(W)                      &none                        &kp LG(R)                                   &kp LG(T)                                                                        &kp LC(LEFT_ARROW)             &my_lt_mouse 5 LG(LS(LEFT_BRACKET))  &my_lt_mouse 6 RG(RS(RIGHT_BRACKET))  &my_lt_mouse 7 RC(RIGHT_ARROW)  &none
+&kp LG(Q)  &kp LG(W)                      &kp LG(E)                    &kp LG(R)                                   &kp LG(T)                                                                        &kp LC(LEFT_ARROW)             &my_lt_mouse 5 LG(LS(LEFT_BRACKET))  &my_lt_mouse 6 RG(RS(RIGHT_BRACKET))  &my_lt_mouse 7 RC(RIGHT_ARROW)  &none
 &kp LG(A)  &hold_to_layer_0 LEFT_CONTROL  &hold_to_layer_0 LEFT_SHIFT  &hold_to_layer_0 LEFT_GUI                   &none                      &trans                     &trans                     &none                          &mkp MB1                             &mkp MB3                              &mkp MB2                        &hold_to_layer_0 RIGHT_ALT
 &kp LG(Z)  &kp LG(X)                      &kp LG(C)                    &kp LG(V)                                   &kp LG(B)                  &trans                     &trans                     &none                          &mkp MB4                             &kp_to_layer_0 LG(SPACE)              &mkp MB5                        &none
 &trans     &trans                         &trans                       &my_mt_to_layer_0 LC(LA(LS(LEFT_GUI))) TAB  &my_lt_to_layer_0 2 ENTER  &kp_to_layer_0 ESCAPE      &my_lt_to_layer_0 3 SPACE  &my_lt_to_layer_0 1 BACKSPACE                                                                                                             &trans
