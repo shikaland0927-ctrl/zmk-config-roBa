@@ -131,6 +131,7 @@
                 retro-tap;
                 quick-tap-ms = <175>;
                 require-prior-idle-ms = <150>;
+                hold-trigger-on-release;
             };
 
             hrm_l: hrm_l {
@@ -145,6 +146,7 @@
                 retro-tap;
                 quick-tap-ms = <175>;
                 require-prior-idle-ms = <150>;
+                hold-trigger-on-release;
             };
 
             my_mt_to_layer_0: my_mt_to_layer_0 {
