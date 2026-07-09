@@ -238,7 +238,7 @@
 
         ARROW {
             bindings = <
-&trans  &trans                    &trans                     &trans  &trans                        &trans    &trans    &trans         &trans     &trans
+&trans  &trans                    &trans                     &trans  &trans                        &trans    &sl 6     &trans         &sl 7      &trans
 &trans  &kp LG(LS(LEFT_BRACKET))  &kp RG(RS(RIGHT_BRACKET))  &trans  &trans  &trans      &kp HOME  &kp LEFT  &kp DOWN  &kp UP         &kp RIGHT  &kp END
 &trans  &trans                    &trans                     &trans  &trans  &trans      &trans    &trans    &mkp MB4  &kp LG(SPACE)  &mkp MB5   &trans
 &trans  &trans                    &trans                     &trans  &trans  &trans      &trans    &trans                                        &trans
