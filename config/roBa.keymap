@@ -45,12 +45,12 @@
         compatible = "zmk,combos";
 
         kana {
-            bindings = <&to_layer_0_kp LANGUAGE_1>;
+            bindings = <&kp_to_layer_0 LANGUAGE_1>;
             key-positions = <18 19>;
         };
 
         eisuu {
-            bindings = <&to_layer_0_kp LANGUAGE_2>;
+            bindings = <&kp_to_layer_0 LANGUAGE_2>;
             key-positions = <13 12>;
         };
 
@@ -101,14 +101,14 @@
     };
 
     macros {
-        to_layer_0_kp: to_layer_0 {
+        kp_to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
 
-        to_layer_0_hold: to_layer_0_hold {
+        hold_to_layer_0: to_layer_0_hold {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings =
@@ -122,7 +122,7 @@
             label = "TO_LAYER_0_HOLD";
         };
 
-        to_layer_0_mo: to_layer_0_mo {
+        mo_to_layer_0: to_layer_0_mo {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings =
@@ -186,7 +186,7 @@
             my_mt_to_layer_0: my_mt_to_layer_0 {
                 compatible = "zmk,behavior-hold-tap";
                 label = "MY_MT_TO_LAYER_0";
-                bindings = <&to_layer_0_hold>, <&to_layer_0_kp>;
+                bindings = <&hold_to_layer_0>, <&kp_to_layer_0>;
 
                 #binding-cells = <2>;
                 tapping-term-ms = <150>;
@@ -199,7 +199,7 @@
                 #binding-cells = <2>;
                 flavor = "hold-preferred";
                 tapping-term-ms = <150>;
-                bindings = <&to_layer_0_mo>, <&to_layer_0_kp>;
+                bindings = <&mo_to_layer_0>, <&kp_to_layer_0>;
 
                 hold-while-undecided;
             };
@@ -248,8 +248,8 @@
         MOUSE {
             bindings = <
 &none                 &sl 6                     &sl 7                      &none                    &none                                                                                                    &none                          &kp LC(LEFT_ARROW)  &mo 5     &kp RC(RIGHT_ARROW)  &none
-&kp LG(LEFT_BRACKET)  &kp LG(LS(LEFT_BRACKET))  &kp RG(RS(RIGHT_BRACKET))  &kp RG(RIGHT_BRACKET)    &none                      &trans                                   &trans                               &none                          &mkp MB1            &mkp MB3  &mkp MB2             &to_layer_0_hold LEFT_GUI
-&none                 &none                     &none                      &none                    &none                      &trans                                   &trans                               &none                          &kp LG(C)           &none     &kp LG(V)            &to_layer_0_hold LS(LA(LC(LEFT_GUI)))
+&kp LG(LEFT_BRACKET)  &kp LG(LS(LEFT_BRACKET))  &kp RG(RS(RIGHT_BRACKET))  &kp RG(RIGHT_BRACKET)    &none                      &trans                                   &trans                               &none                          &mkp MB1            &mkp MB3  &mkp MB2             &hold_to_layer_0 LEFT_GUI
+&none                 &none                     &none                      &none                    &none                      &trans                                   &trans                               &none                          &kp LG(C)           &none     &kp LG(V)            &hold_to_layer_0 LS(LA(LC(LEFT_GUI)))
 &trans                &trans                    &trans                     &my_lt_to_layer_0 2 TAB  &my_lt_to_layer_0 1 ENTER  &my_mt_to_layer_0 LEFT_SHIFT ESCAPE      &my_mt_to_layer_0 RIGHT_SHIFT SPACE  &my_lt_to_layer_0 3 BACKSPACE                                                     &none
             >;
         };
