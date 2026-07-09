@@ -207,10 +207,10 @@
 
         MOUSE {
             bindings = <
-&none   &none   &none   &none                                       &none                                                                            &none                          &sl 6     &mo 5          &sl 7     &none
-&none   &none   &none   &none                                       &none                      &trans                     &trans                     &none                          &mkp MB1  &mkp MB3       &mkp MB2  &none
-&none   &none   &none   &none                                       &none                      &trans                     &trans                     &none                          &mkp MB4  &kp LG(SPACE)  &mkp MB5  &none
-&trans  &trans  &trans  &my_mt_to_layer_0 LC(LA(LS(LEFT_GUI))) TAB  &my_lt_to_layer_0 2 ENTER  &kp_to_layer_0 ESCAPE      &my_lt_to_layer_0 3 SPACE  &my_lt_to_layer_0 1 BACKSPACE                                     &none
+&none   &none   &none   &none                                       &none                                                                            &none                          &sl 6     &mo 5                     &sl 7     &none
+&none   &none   &none   &none                                       &none                      &trans                     &trans                     &none                          &mkp MB1  &mkp MB3                  &mkp MB2  &none
+&none   &none   &none   &none                                       &none                      &trans                     &trans                     &none                          &mkp MB4  &kp_to_layer_0 LG(SPACE)  &mkp MB5  &none
+&trans  &trans  &trans  &my_mt_to_layer_0 LC(LA(LS(LEFT_GUI))) TAB  &my_lt_to_layer_0 2 ENTER  &kp_to_layer_0 ESCAPE      &my_lt_to_layer_0 3 SPACE  &my_lt_to_layer_0 1 BACKSPACE                                                &none
             >;
         };
 
