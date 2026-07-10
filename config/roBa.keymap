@@ -217,7 +217,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                        &kp LC(LEFT_ARROW)  &my_lt_mouse 5 LG(LS(LEFT_BRACKET))  &my_lt_mouse 6 RG(RS(RIGHT_BRACKET))  &my_lt_mouse 7 RC(RIGHT_ARROW)  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &kp HOME  &kp LEFT            &kp DOWN                             &kp UP                                &kp RIGHT                       &kp END
-&trans  &trans  &trans  &trans  &trans  &trans      &trans    &kp LG(LEFT_ARROW)  &kp LG(LEFT_BRACKET)                 &kp RG(RIGHT_BRACKET)                 &kp RG(RIGHT_ARROW)             &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans    &kp LG(UP_ARROW)    &kp LG(LEFT_BRACKET)                 &kp RG(RIGHT_BRACKET)                 &kp RG(DOWN_ARROW)              &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans                                                                                                                         &trans
             >;
         };
