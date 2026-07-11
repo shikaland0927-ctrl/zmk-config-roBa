@@ -180,6 +180,16 @@
 
                 hold-while-undecided;
             };
+
+            aml_mt: aml_mt {
+                compatible = "zmk,behavior-hold-tap";
+                label = "AML_MT";
+                bindings = <&hold_to_layer_0>, <&kp>;
+
+                #binding-cells = <2>;
+                tapping-term-ms = <150>;
+                hold-while-undecided;
+            };
         };
     };
 
@@ -224,10 +234,10 @@
 
         MOUSE {
             bindings = <
-&kp LG(Q)                         &kp LG(W)                             &kp LG(E)                           &kp LG(R)                         &kp LG(T)                                                                        &kp LC(LEFT_ARROW)             &my_lt_mouse 5 LG(LS(LEFT_BRACKET))  &my_lt_mouse 6 RG(RS(RIGHT_BRACKET))  &my_lt_mouse 7 RC(RIGHT_ARROW)  &none
-&my_mt_to_layer_0 LEFT_ALT LG(A)  &my_mt_to_layer_0 LEFT_CONTROL LG(S)  &my_mt_to_layer_0 LEFT_SHIFT LG(D)  &my_mt_to_layer_0 LEFT_GUI LG(F)  &kp LG(G)                  &trans                     &trans                     &none                          &mkp MB1                             &mkp MB3                              &mkp MB2                        &none
-&kp LG(Z)                         &kp LG(X)                             &kp LG(C)                           &kp LG(V)                         &kp LG(B)                  &trans                     &trans                     &none                          &kp LG(LEFT_BRACKET)                 &kp RG(RIGHT_BRACKET)                 &none                           &none
-&trans                            &trans                                &trans                              &none                             &my_lt_to_layer_0 2 ENTER  &kp_to_layer_0 ESCAPE      &my_lt_to_layer_0 3 SPACE  &my_lt_to_layer_0 1 BACKSPACE                                                                                                             &trans
+&kp LG(Q)               &kp LG(W)                   &kp LG(E)                 &kp LG(R)               &kp LG(T)                                                                        &kp LC(LEFT_ARROW)             &my_lt_mouse 5 LG(LS(LEFT_BRACKET))  &my_lt_mouse 6 RG(RS(RIGHT_BRACKET))  &my_lt_mouse 7 RC(RIGHT_ARROW)  &none
+&aml_mt LEFT_ALT LG(A)  &aml_mt LEFT_CONTROL LG(S)  &aml_mt LEFT_SHIFT LG(D)  &aml_mt LEFT_GUI LG(F)  &kp LG(G)                  &trans                     &trans                     &none                          &mkp MB1                             &mkp MB3                              &mkp MB2                        &none
+&kp LG(Z)               &kp LG(X)                   &kp LG(C)                 &kp LG(V)               &kp LG(B)                  &trans                     &trans                     &none                          &kp LG(LEFT_BRACKET)                 &kp RG(RIGHT_BRACKET)                 &none                           &none
+&trans                  &trans                      &trans                    &none                   &my_lt_to_layer_0 2 ENTER  &kp_to_layer_0 ESCAPE      &my_lt_to_layer_0 3 SPACE  &my_lt_to_layer_0 1 BACKSPACE                                                                                                             &trans
             >;
         };
 
