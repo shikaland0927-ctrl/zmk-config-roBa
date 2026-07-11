@@ -188,10 +188,10 @@
 
         default_layer {
             bindings = <
-&kp Q                 &kp W                  &kp E                &kp R                     &kp T                                                        &kp Y               &my_lt_mouse 5 U    &my_lt_mouse 6 I      &my_lt_mouse 7 O        &kp P
-&hrm_l LEFT_ALT A     &hrm_l LEFT_CONTROL S  &hrm_l LEFT_SHIFT D  &hrm_l LEFT_GUI F         &kp G           &kp C_BRIGHTNESS_INC      &kp C_VOLUME_UP    &kp H               &hrm_r RIGHT_GUI J  &hrm_r RIGHT_SHIFT K  &hrm_r RIGHT_CONTROL L  &hrm_r RIGHT_ALT SEMICOLON
-&kp Z                 &kp X                  &kp C                &kp V                     &kp B           &kp C_BRIGHTNESS_DEC      &kp C_VOLUME_DOWN  &kp N               &kp M               &kp COMMA             &kp DOT                 &my_mt LC(LS(LA(LEFT_GUI))) TAB
-&kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))   &kp LS(LG(N5))       &kp LC(LA(LS(LEFT_GUI)))  &my_lt 2 ENTER  &kp ESCAPE                &my_lt 3 SPACE     &my_lt 1 BACKSPACE                                                                    &kp LG(LC(Q))
+&kp Q                 &kp W                  &kp E                &kp R              &kp T                                                        &kp Y               &my_lt_mouse 5 U    &my_lt_mouse 6 I      &my_lt_mouse 7 O        &kp P
+&hrm_l LEFT_ALT A     &hrm_l LEFT_CONTROL S  &hrm_l LEFT_SHIFT D  &hrm_l LEFT_GUI F  &kp G           &kp C_BRIGHTNESS_INC      &kp C_VOLUME_UP    &kp H               &hrm_r RIGHT_GUI J  &hrm_r RIGHT_SHIFT K  &hrm_r RIGHT_CONTROL L  &hrm_r RIGHT_ALT SEMICOLON
+&kp Z                 &kp X                  &kp C                &kp V              &kp B           &kp C_BRIGHTNESS_DEC      &kp C_VOLUME_DOWN  &kp N               &kp M               &kp COMMA             &kp DOT                 &my_mt LC(LS(LA(LEFT_GUI))) TAB
+&kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))   &kp LS(LG(N5))       &trans             &my_lt 2 ENTER  &kp ESCAPE                &my_lt 3 SPACE     &my_lt 1 BACKSPACE                                                                    &kp LG(LC(Q))
             >;
         };
 
@@ -224,10 +224,10 @@
 
         MOUSE {
             bindings = <
-&kp LG(Q)  &kp LG(W)                      &kp LG(E)                    &kp LG(R)                                   &kp LG(T)                                                                        &kp LC(LEFT_ARROW)             &my_lt_mouse 5 LG(LS(LEFT_BRACKET))  &my_lt_mouse 6 RG(RS(RIGHT_BRACKET))  &my_lt_mouse 7 RC(RIGHT_ARROW)  &none
-&kp LG(A)  &hold_to_layer_0 LEFT_CONTROL  &hold_to_layer_0 LEFT_SHIFT  &hold_to_layer_0 LEFT_GUI                   &none                      &trans                     &trans                     &none                          &mkp MB1                             &mkp MB3                              &mkp MB2                        &hold_to_layer_0 RIGHT_ALT
-&kp LG(Z)  &kp LG(X)                      &kp LG(C)                    &kp LG(V)                                   &kp LG(B)                  &trans                     &trans                     &none                          &kp LG(LEFT_BRACKET)                 &kp_to_layer_0 RG(RIGHT_BRACKET)      &none                           &none
-&trans     &trans                         &trans                       &my_mt_to_layer_0 LC(LA(LS(LEFT_GUI))) TAB  &my_lt_to_layer_0 2 ENTER  &kp_to_layer_0 ESCAPE      &my_lt_to_layer_0 3 SPACE  &my_lt_to_layer_0 1 BACKSPACE                                                                                                             &trans
+&kp LG(Q)                         &kp LG(W)                             &kp LG(E)                           &kp LG(R)                         &kp LG(T)                                                                        &kp LC(LEFT_ARROW)             &my_lt_mouse 5 LG(LS(LEFT_BRACKET))  &my_lt_mouse 6 RG(RS(RIGHT_BRACKET))  &my_lt_mouse 7 RC(RIGHT_ARROW)  &none
+&my_mt_to_layer_0 LEFT_ALT LG(A)  &my_mt_to_layer_0 LEFT_CONTROL LG(S)  &my_mt_to_layer_0 LEFT_SHIFT LG(D)  &my_mt_to_layer_0 LEFT_GUI LG(F)  &kp LG(G)                  &trans                     &trans                     &none                          &mkp MB1                             &mkp MB3                              &mkp MB2                        &none
+&kp LG(Z)                         &kp LG(X)                             &kp LG(C)                           &kp LG(V)                         &kp LG(B)                  &trans                     &trans                     &none                          &kp LG(LEFT_BRACKET)                 &kp_to_layer_0 RG(RIGHT_BRACKET)      &none                           &none
+&trans                            &trans                                &trans                              &none                             &my_lt_to_layer_0 2 ENTER  &kp_to_layer_0 ESCAPE      &my_lt_to_layer_0 3 SPACE  &my_lt_to_layer_0 1 BACKSPACE                                                                                                             &trans
             >;
         };
 
