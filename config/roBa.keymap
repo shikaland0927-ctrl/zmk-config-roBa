@@ -245,8 +245,8 @@
         MOUSE {
             bindings = <
 &kp LG(Q)                           &kp LG(W)                   &kp LG(E)                 &kp LG(R)                  &kp LG(T)                                             &kp LC(LEFT_ARROW)   &aml_lt 5 LG(LS(LEFT_BRACKET))  &aml_lt 6 RG(RS(RIGHT_BRACKET))  &aml_lt 7 RC(RIGHT_ARROW)  &none
-&aml_mt LEFT_ALT LG(A)              &aml_mt LEFT_CONTROL LG(S)  &aml_mt LEFT_SHIFT LG(D)  &aml_mt LEFT_GUI LG(F)     &kp LG(G)        &trans              &trans           &none                &mkp MB1                        &mkp MB3                         &mkp MB2                   &none
-&aml_mt LC(LA(LS(LEFT_GUI))) LG(Z)  &kp LG(X)                   &kp LG(C)                 &kp LG(V)                  &kp LG(B)        &trans              &trans           &none                &kp LG(LEFT_BRACKET)            &kp RG(RIGHT_BRACKET)            &none                      &none
+&aml_mt LEFT_ALT LG(A)              &aml_mt LEFT_CONTROL LG(S)  &aml_mt LEFT_SHIFT LG(D)  &aml_mt LEFT_GUI LG(F)     &kp LG(G)        &trans              &trans           &none                &mkp MB1                        &mkp MB3                         &mkp MB2                   &kp_tdl RIGHT_ALT
+&aml_mt LC(LA(LS(LEFT_GUI))) LG(Z)  &kp LG(X)                   &kp LG(C)                 &kp LG(V)                  &kp LG(B)        &trans              &trans           &none                &kp LG(LEFT_BRACKET)            &kp RG(RIGHT_BRACKET)            &none                      &mt_tdl RC(RS(RA(RIGHT_GUI))) TAB
 &trans                              &trans                      &trans                    &kp_tdl LG(LC(LA(LS(R))))  &lt_tdl 2 ENTER  &kp_tdl ESCAPE      &lt_tdl 3 SPACE  &lt_tdl 1 BACKSPACE                                                                                              &trans
             >;
         };
