@@ -286,10 +286,10 @@
 
         MOUSE {
             bindings = <
-&none                     &none             &none           &none                           &none                                                 &kp LC(LEFT_ARROW)   &lt_aml 5 LG(LS(LEFT_BRACKET))  &lt_aml 6 RG(RS(RIGHT_BRACKET))  &lt_aml 7 RC(RIGHT_ARROW)  &none
-&kp LEFT_ALT              &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_GUI                    &none            &trans              &trans           &none                &mt_aml LEFT_GUI MB1            &mkp MB3                         &mkp MB2                   &kp RIGHT_ALT
-&kp LC(LS(LA(LEFT_GUI)))  &none             &none           &none                           &none            &trans              &trans           &none                &kp LG(LEFT_BRACKET)            &kp RG(RIGHT_BRACKET)            &none                      &mt_tdl RC(RS(RA(RIGHT_GUI))) TAB
-&trans                    &trans            &trans          &lt_as_tdl 8 LG(LC(LA(LS(R))))  &lt_tdl 2 ENTER  &kp_tdl ESCAPE      &lt_tdl 3 SPACE  &lt_tdl 1 BACKSPACE                                                                                              &trans
+&none                           &none                   &none                 &none                           &none                                                 &kp LC(LEFT_ARROW)   &lt_aml 5 LG(LS(LEFT_BRACKET))  &lt_aml 6 RG(RS(RIGHT_BRACKET))  &lt_aml 7 RC(RIGHT_ARROW)  &none
+&hold_tdl LEFT_ALT              &hold_tdl LEFT_CONTROL  &hold_tdl LEFT_SHIFT  &hold_tdl LEFT_GUI              &none            &trans              &trans           &none                &mt_aml LEFT_GUI MB1            &mkp MB3                         &mkp MB2                   &hold_tdl RIGHT_ALT
+&hold_tdl LC(LS(LA(LEFT_GUI)))  &none                   &none                 &none                           &none            &trans              &trans           &none                &kp LG(LEFT_BRACKET)            &kp RG(RIGHT_BRACKET)            &none                      &mt_tdl RC(RS(RA(RIGHT_GUI))) TAB
+&trans                          &trans                  &trans                &lt_as_tdl 8 LG(LC(LA(LS(R))))  &lt_tdl 2 ENTER  &kp_tdl ESCAPE      &lt_tdl 3 SPACE  &lt_tdl 1 BACKSPACE                                                                                              &trans
             >;
         };
 
