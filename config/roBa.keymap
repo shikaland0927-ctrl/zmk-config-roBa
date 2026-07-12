@@ -265,13 +265,11 @@
             mt_aml: mt_aml {
                 compatible = "zmk,behavior-hold-tap";
                 label = "MT_AML";
-                bindings = <&hold_tdl_aml>, <&mkp>;
+                bindings = <&hold_tdl>, <&mkp>;
 
                 #binding-cells = <2>;
-                flavor = "tap-unless-interrupted";
-                hold-trigger-key-positions = <41 40 0 1 2 3 4 10 11 12 13 14 15 22 23 24 25 26 27 34 35 36 37 38 39>;
-                tapping-term-ms = <120>;
-                quick-tap-ms = <200>;
+                tapping-term-ms = <150>;
+                hold-while-undecided;
             };
         };
     };
@@ -318,7 +316,7 @@
         MOUSE {
             bindings = <
 &none                           &none                   &none                 &none                           &none                                                 &kp LC(LEFT_ARROW)   &lt_aml 5 LG(LS(LEFT_BRACKET))  &lt_aml 6 RG(RS(RIGHT_BRACKET))  &lt_aml 7 RC(RIGHT_ARROW)  &none
-&hold_tdl LEFT_ALT              &hold_tdl LEFT_CONTROL  &hold_tdl LEFT_SHIFT  &hold_tdl LEFT_GUI              &none            &trans              &trans           &none                &j_mouse                        &mkp MB3                         &mkp MB2                   &hold_tdl RIGHT_ALT
+&hold_tdl LEFT_ALT              &hold_tdl LEFT_CONTROL  &hold_tdl LEFT_SHIFT  &hold_tdl LEFT_GUI              &none            &trans              &trans           &none                &j_mouse                        &mt_aml RIGHT_SHIFT MB3          &mt_aml RIGHT_CONTROL MB2  &hold_tdl RIGHT_ALT
 &hold_tdl LC(LS(LA(LEFT_GUI)))  &none                   &none                 &none                           &none            &trans              &trans           &none                &kp LG(LEFT_BRACKET)            &kp RG(RIGHT_BRACKET)            &none                      &mt_tdl RC(RS(RA(RIGHT_GUI))) TAB
 &trans                          &trans                  &trans                &lt_as_tdl 8 LG(LC(LA(LS(R))))  &lt_tdl 2 ENTER  &kp_tdl ESCAPE      &lt_tdl 3 SPACE  &lt_tdl 1 BACKSPACE                                                                                              &trans
             >;
