@@ -94,7 +94,7 @@
             label = "TO_LAYER_0_MO";
         };
 
-        app_switch: hold_app_switch {
+        as: hold_app_switch {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             wait-ms = <0>;
@@ -206,14 +206,14 @@
                 hold-trigger-key-positions = <41 40 0 1 2 3 4 10 11 12 13 14 15 22 23 24 25 26 27 34 35 36 37 38 39>;
             };
 
-            lt_app_switcher: lt_app_switcher {
+            lt_as_kp: lt_as_kp {
                 compatible = "zmk,behavior-hold-tap";
-                label = "LT_APP_SWITCHER";
+                label = "LT_AS_KP";
                 #binding-cells = <2>;
                 flavor = "hold-preferred";
                 tapping-term-ms = <150>;
                 quick-tap-ms = <200>;
-                bindings = <&app_switch>, <&kp>;
+                bindings = <&as>, <&kp>;
             };
         };
     };
@@ -223,10 +223,10 @@
 
         default_layer {
             bindings = <
-&kp Q                          &kp W                  &kp E                &kp R                                 &kp T                                                        &kp Y               &aml_lt 5 U         &aml_lt 6 I           &aml_lt 7 O             &kp P
-&hrm_l LEFT_ALT A              &hrm_l LEFT_CONTROL S  &hrm_l LEFT_SHIFT D  &hrm_l LEFT_GUI F                     &kp G           &kp C_BRIGHTNESS_INC      &kp C_VOLUME_UP    &kp H               &hrm_r RIGHT_GUI J  &hrm_r RIGHT_SHIFT K  &hrm_r RIGHT_CONTROL L  &hrm_r RIGHT_ALT SEMICOLON
-&hrm_r LC(LA(LS(LEFT_GUI))) Z  &kp X                  &kp C                &kp V                                 &kp B           &kp C_BRIGHTNESS_DEC      &kp C_VOLUME_DOWN  &kp N               &kp M               &kp COMMA             &kp DOT                 &hrm_r RS(RA(RC(RIGHT_GUI))) TAB
-&kp LS(LG(NUMBER_3))           &kp LS(LG(NUMBER_4))   &kp LS(LG(N5))       &lt_app_switcher 8 LG(LC(LA(LS(R))))  &my_lt 2 ENTER  &kp ESCAPE                &my_lt 3 SPACE     &my_lt 1 BACKSPACE                                                                    &kp LG(LC(Q))
+&kp Q                          &kp W                  &kp E                &kp R                          &kp T                                                        &kp Y               &aml_lt 5 U         &aml_lt 6 I           &aml_lt 7 O             &kp P
+&hrm_l LEFT_ALT A              &hrm_l LEFT_CONTROL S  &hrm_l LEFT_SHIFT D  &hrm_l LEFT_GUI F              &kp G           &kp C_BRIGHTNESS_INC      &kp C_VOLUME_UP    &kp H               &hrm_r RIGHT_GUI J  &hrm_r RIGHT_SHIFT K  &hrm_r RIGHT_CONTROL L  &hrm_r RIGHT_ALT SEMICOLON
+&hrm_r LC(LA(LS(LEFT_GUI))) Z  &kp X                  &kp C                &kp V                          &kp B           &kp C_BRIGHTNESS_DEC      &kp C_VOLUME_DOWN  &kp N               &kp M               &kp COMMA             &kp DOT                 &hrm_r RS(RA(RC(RIGHT_GUI))) TAB
+&kp LS(LG(NUMBER_3))           &kp LS(LG(NUMBER_4))   &kp LS(LG(N5))       &lt_as_kp 8 LG(LC(LA(LS(R))))  &my_lt 2 ENTER  &kp ESCAPE                &my_lt 3 SPACE     &my_lt 1 BACKSPACE                                                                    &kp LG(LC(Q))
             >;
         };
 
