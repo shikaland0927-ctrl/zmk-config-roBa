@@ -190,6 +190,16 @@
                 tapping-term-ms = <150>;
                 hold-while-undecided;
             };
+
+            mt_tdl_mkp: mt_tdl_mkp {
+                compatible = "zmk,behavior-hold-tap";
+                label = "MT_TDL_MKP";
+                bindings = <&hold_tdl>, <&mkp>;
+
+                #binding-cells = <2>;
+                tapping-term-ms = <150>;
+                hold-while-undecided;
+            };
         };
     };
 
