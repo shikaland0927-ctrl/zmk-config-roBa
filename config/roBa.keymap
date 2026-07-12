@@ -43,12 +43,12 @@
         compatible = "zmk,combos";
 
         kana {
-            bindings = <&my_mt_to_layer_0 RS(RIGHT_GUI) LANGUAGE_1>;
+            bindings = <&mt_tdl RS(RIGHT_GUI) LANGUAGE_1>;
             key-positions = <18 19>;
         };
 
         eisuu {
-            bindings = <&my_mt_to_layer_0 LS(LEFT_GUI) LANGUAGE_2>;
+            bindings = <&mt_tdl LS(LEFT_GUI) LANGUAGE_2>;
             key-positions = <13 12>;
         };
 
@@ -59,14 +59,14 @@
     };
 
     macros {
-        kp_to_layer_0: to_layer_0 {
+        kp_tdl: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
 
-        hold_to_layer_0: to_layer_0_hold {
+        hold_tdl: to_layer_0_hold {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings =
@@ -80,7 +80,7 @@
             label = "TO_LAYER_0_HOLD";
         };
 
-        mo_to_layer_0: to_layer_0_mo {
+        mo_tdl: to_layer_0_mo {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings =
@@ -147,30 +147,30 @@
                 hold-trigger-on-release;
             };
 
-            my_mt_to_layer_0: my_mt_to_layer_0 {
+            mt_tdl: mt_tdl {
                 compatible = "zmk,behavior-hold-tap";
-                label = "MY_MT_TO_LAYER_0";
-                bindings = <&hold_to_layer_0>, <&kp_to_layer_0>;
+                label = "MT_TDL";
+                bindings = <&hold_tdl>, <&kp_tdl>;
 
                 #binding-cells = <2>;
                 tapping-term-ms = <150>;
                 hold-while-undecided;
             };
 
-            my_lt_to_layer_0: my_lt_to_layer_0 {
+            lt_tdl: lt_tdl {
                 compatible = "zmk,behavior-hold-tap";
-                label = "MY_LT_TO_LAYER_0";
+                label = "LT_TDL";
                 #binding-cells = <2>;
                 flavor = "hold-preferred";
                 tapping-term-ms = <150>;
-                bindings = <&mo_to_layer_0>, <&kp_to_layer_0>;
+                bindings = <&mo_tdl>, <&kp_tdl>;
 
                 hold-while-undecided;
             };
 
-            my_lt_mouse: my_lt_mouse {
+            aml_lt: aml_lt {
                 compatible = "zmk,behavior-hold-tap";
-                label = "MY_LT_MOUSE";
+                label = "AML_LT";
                 #binding-cells = <2>;
                 flavor = "balanced";
                 tapping-term-ms = <250>;
@@ -184,7 +184,7 @@
             aml_mt: aml_mt {
                 compatible = "zmk,behavior-hold-tap";
                 label = "AML_MT";
-                bindings = <&hold_to_layer_0>, <&kp>;
+                bindings = <&hold_tdl>, <&kp>;
 
                 #binding-cells = <2>;
                 tapping-term-ms = <150>;
@@ -198,7 +198,7 @@
 
         default_layer {
             bindings = <
-&kp Q                          &kp W                  &kp E                &kp R                  &kp T                                                        &kp Y               &my_lt_mouse 5 U    &my_lt_mouse 6 I      &my_lt_mouse 7 O        &kp P
+&kp Q                          &kp W                  &kp E                &kp R                  &kp T                                                        &kp Y               &aml_lt 5 U         &aml_lt 6 I           &aml_lt 7 O             &kp P
 &hrm_l LEFT_ALT A              &hrm_l LEFT_CONTROL S  &hrm_l LEFT_SHIFT D  &hrm_l LEFT_GUI F      &kp G           &kp C_BRIGHTNESS_INC      &kp C_VOLUME_UP    &kp H               &hrm_r RIGHT_GUI J  &hrm_r RIGHT_SHIFT K  &hrm_r RIGHT_CONTROL L  &hrm_r RIGHT_ALT SEMICOLON
 &hrm_r LC(LA(LS(LEFT_GUI))) Z  &kp X                  &kp C                &kp V                  &kp B           &kp C_BRIGHTNESS_DEC      &kp C_VOLUME_DOWN  &kp N               &kp M               &kp COMMA             &kp DOT                 &hrm_r RS(RA(RC(RIGHT_GUI))) TAB
 &kp LS(LG(NUMBER_3))           &kp LS(LG(NUMBER_4))   &kp LS(LG(N5))       &kp LG(LC(LA(LS(R))))  &my_lt 2 ENTER  &kp ESCAPE                &my_lt 3 SPACE     &my_lt 1 BACKSPACE                                                                    &kp LG(LC(Q))
@@ -225,19 +225,19 @@
 
         ARROW {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                        &kp LC(LEFT_ARROW)  &my_lt_mouse 5 LG(LS(LEFT_BRACKET))  &my_lt_mouse 6 RG(RS(RIGHT_BRACKET))  &my_lt_mouse 7 RC(RIGHT_ARROW)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &kp HOME  &kp LEFT            &kp DOWN                             &kp UP                                &kp RIGHT                       &kp END
-&trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans              &kp LG(LEFT_BRACKET)                 &kp RG(RIGHT_BRACKET)                 &trans                          &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans                                                                                                                         &trans
+&trans  &trans  &trans  &trans  &trans                        &kp LC(LEFT_ARROW)  &aml_lt 5 LG(LS(LEFT_BRACKET))  &aml_lt 6 RG(RS(RIGHT_BRACKET))  &aml_lt 7 RC(RIGHT_ARROW)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp HOME  &kp LEFT            &kp DOWN                        &kp UP                           &kp RIGHT                  &kp END
+&trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans              &kp LG(LEFT_BRACKET)            &kp RG(RIGHT_BRACKET)            &trans                     &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans                                                                                                          &trans
             >;
         };
 
         MOUSE {
             bindings = <
-&kp LG(Q)                           &kp LG(W)                   &kp LG(E)                 &kp LG(R)                         &kp LG(T)                                                                        &kp LC(LEFT_ARROW)             &my_lt_mouse 5 LG(LS(LEFT_BRACKET))  &my_lt_mouse 6 RG(RS(RIGHT_BRACKET))  &my_lt_mouse 7 RC(RIGHT_ARROW)  &none
-&aml_mt LEFT_ALT LG(A)              &aml_mt LEFT_CONTROL LG(S)  &aml_mt LEFT_SHIFT LG(D)  &aml_mt LEFT_GUI LG(F)            &kp LG(G)                  &trans                     &trans                     &none                          &mkp MB1                             &mkp MB3                              &mkp MB2                        &none
-&aml_mt LC(LA(LS(LEFT_GUI))) LG(Z)  &kp LG(X)                   &kp LG(C)                 &kp LG(V)                         &kp LG(B)                  &trans                     &trans                     &none                          &kp LG(LEFT_BRACKET)                 &kp RG(RIGHT_BRACKET)                 &none                           &none
-&trans                              &trans                      &trans                    &kp_to_layer_0 LG(LC(LA(LS(R))))  &my_lt_to_layer_0 2 ENTER  &kp_to_layer_0 ESCAPE      &my_lt_to_layer_0 3 SPACE  &my_lt_to_layer_0 1 BACKSPACE                                                                                                             &trans
+&kp LG(Q)                           &kp LG(W)                   &kp LG(E)                 &kp LG(R)                  &kp LG(T)                                             &kp LC(LEFT_ARROW)   &aml_lt 5 LG(LS(LEFT_BRACKET))  &aml_lt 6 RG(RS(RIGHT_BRACKET))  &aml_lt 7 RC(RIGHT_ARROW)  &none
+&aml_mt LEFT_ALT LG(A)              &aml_mt LEFT_CONTROL LG(S)  &aml_mt LEFT_SHIFT LG(D)  &aml_mt LEFT_GUI LG(F)     &kp LG(G)        &trans              &trans           &none                &mkp MB1                        &mkp MB3                         &mkp MB2                   &none
+&aml_mt LC(LA(LS(LEFT_GUI))) LG(Z)  &kp LG(X)                   &kp LG(C)                 &kp LG(V)                  &kp LG(B)        &trans              &trans           &none                &kp LG(LEFT_BRACKET)            &kp RG(RIGHT_BRACKET)            &none                      &none
+&trans                              &trans                      &trans                    &kp_tdl LG(LC(LA(LS(R))))  &lt_tdl 2 ENTER  &kp_tdl ESCAPE      &lt_tdl 3 SPACE  &lt_tdl 1 BACKSPACE                                                                                              &trans
             >;
         };
 
