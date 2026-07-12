@@ -197,9 +197,9 @@
                 hold-while-undecided;
             };
 
-            aml_lt: aml_lt {
+            lt_aml: lt_aml {
                 compatible = "zmk,behavior-hold-tap";
-                label = "AML_LT";
+                label = "LT_AML";
                 #binding-cells = <2>;
                 flavor = "balanced";
                 tapping-term-ms = <150>;
@@ -230,6 +230,18 @@
 
                 hold-while-undecided;
             };
+
+            mt_aml: mt_aml {
+                compatible = "zmk,behavior-hold-tap";
+                label = "MT_AML";
+                bindings = <&hold_tdl>, <&mkp>;
+
+                #binding-cells = <2>;
+                flavor = "tap-unless-interrupted";
+                hold-trigger-key-positions = <41 40 0 1 2 3 4 10 11 12 13 14 15 22 23 24 25 26 27 34 35 36 37 38 39>;
+                tapping-term-ms = <150>;
+                quick-tap-ms = <200>;
+            };
         };
     };
 
@@ -238,7 +250,7 @@
 
         default_layer {
             bindings = <
-&kp Q                          &kp W                  &kp E                &kp R                       &kp T                                                        &kp Y               &aml_lt 5 U         &aml_lt 6 I           &aml_lt 7 O             &kp P
+&kp Q                          &kp W                  &kp E                &kp R                       &kp T                                                        &kp Y               &lt_aml 5 U         &lt_aml 6 I           &lt_aml 7 O             &kp P
 &hrm_l LEFT_ALT A              &hrm_l LEFT_CONTROL S  &hrm_l LEFT_SHIFT D  &hrm_l LEFT_GUI F           &kp G           &kp C_BRIGHTNESS_INC      &kp C_VOLUME_UP    &kp H               &hrm_r RIGHT_GUI J  &hrm_r RIGHT_SHIFT K  &hrm_r RIGHT_CONTROL L  &hrm_r RIGHT_ALT SEMICOLON
 &hrm_r LC(LA(LS(LEFT_GUI))) Z  &kp X                  &kp C                &kp V                       &kp B           &kp C_BRIGHTNESS_DEC      &kp C_VOLUME_DOWN  &kp N               &kp M               &kp COMMA             &kp DOT                 &hrm_r RS(RA(RC(RIGHT_GUI))) TAB
 &kp LS(LG(NUMBER_3))           &kp LS(LG(NUMBER_4))   &kp LS(LG(N5))       &lt_as 8 LG(LC(LA(LS(R))))  &my_lt 2 ENTER  &kp ESCAPE                &my_lt 3 SPACE     &my_lt 1 BACKSPACE                                                                    &kp LG(LC(Q))
@@ -265,7 +277,7 @@
 
         ARROW {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                        &kp LC(LEFT_ARROW)  &aml_lt 5 LG(LS(LEFT_BRACKET))  &aml_lt 6 RG(RS(RIGHT_BRACKET))  &aml_lt 7 RC(RIGHT_ARROW)  &trans
+&trans  &trans  &trans  &trans  &trans                        &kp LC(LEFT_ARROW)  &lt_aml 5 LG(LS(LEFT_BRACKET))  &lt_aml 6 RG(RS(RIGHT_BRACKET))  &lt_aml 7 RC(RIGHT_ARROW)  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &kp HOME  &kp LEFT            &kp DOWN                        &kp UP                           &kp RIGHT                  &kp END
 &trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans              &kp LG(LEFT_BRACKET)            &kp RG(RIGHT_BRACKET)            &trans                     &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans                                                                                                          &trans
@@ -274,8 +286,8 @@
 
         MOUSE {
             bindings = <
-&none                           &none                   &none                 &none                           &none                                                 &kp LC(LEFT_ARROW)   &aml_lt 5 LG(LS(LEFT_BRACKET))  &aml_lt 6 RG(RS(RIGHT_BRACKET))  &aml_lt 7 RC(RIGHT_ARROW)  &none
-&hold_tdl LEFT_ALT              &hold_tdl LEFT_CONTROL  &hold_tdl LEFT_SHIFT  &hold_tdl LEFT_GUI              &none            &trans              &trans           &none                &mkp MB1                        &mkp MB3                         &mkp MB2                   &hold_tdl RIGHT_ALT
+&none                           &none                   &none                 &none                           &none                                                 &kp LC(LEFT_ARROW)   &lt_aml 5 LG(LS(LEFT_BRACKET))  &lt_aml 6 RG(RS(RIGHT_BRACKET))  &lt_aml 7 RC(RIGHT_ARROW)  &none
+&hold_tdl LEFT_ALT              &hold_tdl LEFT_CONTROL  &hold_tdl LEFT_SHIFT  &hold_tdl LEFT_GUI              &none            &trans              &trans           &none                &mt_aml LEFT_GUI MB1            &mkp MB3                         &mkp MB2                   &hold_tdl RIGHT_ALT
 &hold_tdl LC(LS(LA(LEFT_GUI)))  &none                   &none                 &none                           &none            &trans              &trans           &none                &kp LG(LEFT_BRACKET)            &kp RG(RIGHT_BRACKET)            &none                      &mt_tdl RC(RS(RA(RIGHT_GUI))) TAB
 &trans                          &trans                  &trans                &lt_as_tdl 8 LG(LC(LA(LS(R))))  &lt_tdl 2 ENTER  &kp_tdl ESCAPE      &lt_tdl 3 SPACE  &lt_tdl 1 BACKSPACE                                                                                              &trans
             >;
