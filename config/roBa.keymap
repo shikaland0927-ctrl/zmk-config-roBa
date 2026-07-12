@@ -338,10 +338,10 @@
 
         APP_SWITCHER {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans       &trans   &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LS(TAB)  &kp TAB  &kp GRAVE  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans       &trans   &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                   &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans       &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LS(TAB)  &kp TAB  &kp F13  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans       &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                 &trans
             >;
         };
     };
