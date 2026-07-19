@@ -293,7 +293,7 @@
             bindings = <
 &kp Q                          &kp L                  &kp U                &kp COMMA                   &kp PERIOD                                                   &kp F               &lt_aml 5 W         &lt_aml 6 R           &lt_aml 7 Y             &kp P
 &hrm_l LEFT_ALT E              &hrm_l LEFT_CONTROL I  &hrm_l LEFT_SHIFT A  &hrm_l LEFT_GUI O           &kp SEMICOLON   &kp C_BRIGHTNESS_INC      &kp C_VOLUME_UP    &kp K               &hrm_r RIGHT_GUI T  &hrm_r RIGHT_SHIFT N  &hrm_r RIGHT_CONTROL S  &hrm_r RIGHT_ALT H
-&hrm_l LC(LA(LS(LEFT_GUI))) Z  &kp X                  &kp C                &kp V                       &kp TAB         &kp C_BRIGHTNESS_DEC      &kp C_VOLUME_DOWN  &kp G               &kp D               &kp M                 &kp J                   &hrm_r RS(RA(RC(RIGHT_GUI))) B
+&hrm_l LC(LA(LS(LEFT_GUI))) J  &kp X                  &kp C                &kp V                       &kp TAB         &kp C_BRIGHTNESS_DEC      &kp C_VOLUME_DOWN  &kp G               &kp D               &kp M                 &kp Z                   &hrm_r RS(RA(RC(RIGHT_GUI))) B
 &kp LS(LG(NUMBER_3))           &kp LS(LG(NUMBER_4))   &kp LS(LG(N5))       &lt_as 8 LG(LC(LA(LS(R))))  &my_lt 2 ENTER  &kp ESCAPE                &my_lt 3 SPACE     &my_lt 1 BACKSPACE                                                                    &kp LG(LC(Q))
             >;
         };
@@ -374,7 +374,7 @@
             bindings = <
 &kp RG(Q)  &kp RG(L)  &kp RG(U)  &kp RG(COMMA)  &kp RG(PERIOD)                                &trans             &trans  &trans  &trans  &trans
 &kp RG(E)  &kp RG(I)  &kp RG(A)  &kp RG(O)      &kp RG(SEMICOLON)  &trans      &trans         &trans             &trans  &trans  &trans  &trans
-&kp RG(Z)  &kp RG(X)  &kp RG(C)  &kp RG(V)      &kp RG(TAB)        &trans      &trans         &trans             &trans  &trans  &trans  &trans
+&kp RG(J)  &kp RG(X)  &kp RG(C)  &kp RG(V)      &kp RG(TAB)        &trans      &trans         &trans             &trans  &trans  &trans  &trans
 &trans     &trans     &trans     &trans         &kp RG(ENTER)      &trans      &kp RG(SPACE)  &kp RG(BACKSPACE)                          &trans
             >;
         };
