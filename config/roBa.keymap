@@ -56,6 +56,11 @@
             bindings = <&kp K_MUTE>;
             key-positions = <16 28>;
         };
+
+        xn {
+            bindings = <&xn_macro>;
+            key-positions = <20 19>;
+        };
     };
 
     macros {
@@ -152,6 +157,13 @@
                 <&macro_param_1to1 &mo MACRO_PLACEHOLDER &kp LEFT_GUI>;
 
             label = "AS_TDL";
+        };
+
+        xn_macro: zn_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp X &kp N>;
+            label = "ZN_MACRO";
         };
     };
 
