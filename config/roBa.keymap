@@ -291,7 +291,7 @@
 
         default_layer {
             bindings = <
-&kp Q                          &kp L                  &kp U                &kp COMMA                   &kp PERIOD                                                   &kp F               &lt_as 5 W          &lt_aml 6 R           &lt_aml 7 Y             &kp P
+&kp Q                          &kp L                  &kp U                &kp COMMA                   &kp PERIOD                                                   &kp F               &lt_aml 5 W         &lt_aml 6 R           &lt_aml 7 Y             &kp P
 &hrm_l LEFT_ALT E              &hrm_l LEFT_CONTROL I  &hrm_l LEFT_SHIFT A  &hrm_l LEFT_GUI O           &kp SEMICOLON   &kp C_BRIGHTNESS_INC      &kp C_VOLUME_UP    &kp K               &hrm_r RIGHT_GUI T  &hrm_r RIGHT_SHIFT N  &hrm_r RIGHT_CONTROL S  &hrm_r RIGHT_ALT H
 &hrm_l LC(LA(LS(LEFT_GUI))) J  &kp X                  &kp C                &kp V                       &kp TAB         &kp C_BRIGHTNESS_DEC      &kp C_VOLUME_DOWN  &kp G               &kp D               &kp M                 &kp Z                   &hrm_r RS(RA(RC(RIGHT_GUI))) B
 &kp LS(LG(NUMBER_3))           &kp LS(LG(NUMBER_4))   &kp LS(LG(N5))       &lt_as 8 LG(LC(LA(LS(R))))  &my_lt 2 ENTER  &kp ESCAPE                &my_lt 3 SPACE     &my_lt 1 BACKSPACE                                                                    &kp LG(LC(Q))
@@ -318,19 +318,19 @@
 
         ARROW {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                        &kp LC(LEFT_ARROW)  &lt_as_tdl 5 LG(LS(LEFT_BRACKET))  &lt_aml 6 RG(RS(RIGHT_BRACKET))  &lt_aml 7 RC(RIGHT_ARROW)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &kp HOME  &kp LEFT            &kp DOWN                           &kp UP                           &kp RIGHT                  &kp END
-&trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans              &kp LG(LEFT_BRACKET)               &kp RG(RIGHT_BRACKET)            &trans                     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans                                                                                                             &trans
+&trans  &trans  &trans  &trans  &trans                        &kp LC(LEFT_ARROW)  &lt_aml 5 LG(LS(LEFT_BRACKET))  &lt_aml 6 RG(RS(RIGHT_BRACKET))  &lt_aml 7 RC(RIGHT_ARROW)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp HOME  &kp LEFT            &kp DOWN                        &kp UP                           &kp RIGHT                  &kp END
+&trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans              &kp LG(LEFT_BRACKET)            &kp RG(RIGHT_BRACKET)            &trans                     &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans                                                                                                          &trans
             >;
         };
 
         MOUSE {
             bindings = <
-&none                           &none                   &none                 &none                           &none                                                 &kp LC(LEFT_ARROW)   &lt_as_tdl 5 LG(LS(LEFT_BRACKET))  &lt_aml 6 RG(RS(RIGHT_BRACKET))  &lt_aml 7 RC(RIGHT_ARROW)  &none
-&hold_tdl LEFT_ALT              &hold_tdl LEFT_CONTROL  &hold_tdl LEFT_SHIFT  &hold_tdl LEFT_GUI              &none            &trans              &trans           &none                &j_mouse                           &mt_aml RIGHT_SHIFT MB3          &mt_aml RIGHT_CONTROL MB2  &hold_tdl RIGHT_ALT
-&hold_tdl LC(LS(LA(LEFT_GUI)))  &none                   &none                 &none                           &none            &trans              &trans           &none                &kp LG(LEFT_BRACKET)               &kp RG(RIGHT_BRACKET)            &none                      &mt_tdl RC(RS(RA(RIGHT_GUI))) TAB
-&trans                          &trans                  &trans                &lt_as_tdl 8 LG(LC(LA(LS(R))))  &lt_tdl 2 ENTER  &kp_tdl ESCAPE      &lt_tdl 3 SPACE  &lt_tdl 1 BACKSPACE                                                                                                 &trans
+&none                           &none                   &none                 &none                           &none                                                 &kp LC(LEFT_ARROW)   &lt_aml 5 LG(LS(LEFT_BRACKET))  &lt_aml 6 RG(RS(RIGHT_BRACKET))  &lt_aml 7 RC(RIGHT_ARROW)  &none
+&hold_tdl LEFT_ALT              &hold_tdl LEFT_CONTROL  &hold_tdl LEFT_SHIFT  &hold_tdl LEFT_GUI              &none            &trans              &trans           &none                &j_mouse                        &mt_aml RIGHT_SHIFT MB3          &mt_aml RIGHT_CONTROL MB2  &hold_tdl RIGHT_ALT
+&hold_tdl LC(LS(LA(LEFT_GUI)))  &none                   &none                 &none                           &none            &trans              &trans           &none                &kp LG(LEFT_BRACKET)            &kp RG(RIGHT_BRACKET)            &none                      &mt_tdl RC(RS(RA(RIGHT_GUI))) TAB
+&trans                          &trans                  &trans                &lt_as_tdl 8 LG(LC(LA(LS(R))))  &lt_tdl 2 ENTER  &kp_tdl ESCAPE      &lt_tdl 3 SPACE  &lt_tdl 1 BACKSPACE                                                                                              &trans
             >;
         };
 
