@@ -14,10 +14,10 @@
     gesture {
         layers = <5>;
         bindings =
-            <&kp LG(LC(F))>,
-            <&kp LA(LC(LEFT_ARROW))>,
+            <&kp TAB>,
+            <&kp LS(TAB)>,
             <&kp LA(LC(UP_ARROW))>,
-            <&kp LA(LC(DOWN_ARROW))>;
+            <&kp GRAVE>;
 
         tick = <120>;
         wait-ms = <5>;
