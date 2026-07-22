@@ -15,11 +15,11 @@
         layers = <5>;
         bindings =
             <&kp TAB>,
-            <&kp LS(TAB)>,
+            <&kp LA(LC(DOWN_ARROW))>;
             <&kp LA(LC(UP_ARROW))>,
-            <&kp GRAVE>;
+            <&kp LA(LC(DOWN_ARROW))>;
 
-        tick = <50>;
+        tick = <120>;
         wait-ms = <5>;
         tap-ms = <5>;
     };
@@ -28,7 +28,7 @@
         layers = <7>;
         bindings =
             <&kp LG(LC(RIGHT_ARROW))>,
-            <&kp LG(LC(LEFT_ARROW))>,
+            <&kp LG(LC(DOWN_ARROW))>;
             <&kp LG(LC(UP_ARROW))>,
             <&kp LG(LC(DOWN_ARROW))>;
 
