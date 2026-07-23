@@ -383,5 +383,14 @@
 &trans     &trans     &trans     &trans         &kp RG(ENTER)      &trans      &kp RG(SPACE)  &kp RG(BACKSPACE)                          &trans
             >;
         };
+
+        layer_10 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
+        };
     };
 };
