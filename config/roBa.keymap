@@ -61,11 +61,6 @@
             bindings = <&xn_macro>;
             key-positions = <20 19>;
         };
-
-        caps_lock {
-            bindings = <&kp CAPSLOCK>;
-            key-positions = <12 19>;
-        };
     };
 
     macros {
@@ -307,7 +302,7 @@
             bindings = <
 &kp EXCLAMATION  &kp QUESTION   &kp AMPERSAND  &kp PIPE          &kp CARET                          &kp TILDE  &kp LEFT_BRACE        &kp APOSTROPHE     &kp RIGHT_BRACE        &kp AT
 &kp PLUS         &kp MINUS      &kp ASTRK      &kp FSLH          &kp PERCENT    &trans      &trans  &kp HASH   &kp LEFT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp RIGHT_PARENTHESIS  &trans
-&kp DOLLAR       &kp LESS_THAN  &kp EQUAL      &kp GREATER_THAN  &kp BACKSLASH  &trans      &trans  &kp GRAVE  &kp LEFT_BRACKET      &kp UNDERSCORE     &kp RIGHT_BRACKET      &trans
+&kp DOLLAR       &kp LESS_THAN  &kp EQUAL      &kp GREATER_THAN  &kp BACKSLASH  &trans      &trans  &kp GRAVE  &kp LEFT_BRACKET      &kp UNDERSCORE     &kp RIGHT_BRACKET      &kp CAPSLOCK
 &trans           &trans         &trans         &trans            &trans         &trans      &trans  &trans                                                                     &trans
             >;
         };
